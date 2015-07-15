@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">10K Trainer</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_one_part">OnePartActivity</string>
+    <string name="title_activity_two_part">TwoPartActivity</string>
+    <string name="title_activity_three_part">ThreePartActivity</string>
+    <string name="title_activity_four_part">FourPartActivity</string>
+    <string name="title_activity_five_part">FivePartActivity</string>
+    <string name="title_activity_six_part">SixPartActivity</string>
+    <string name="title_activity_seven_part">SevenPartActivity</string>
+    <string name="title_activity_eight_part">EightPartActivity</string>
+    <string name="title_activity_nine_part">NinePartActivity</string>
+    <string name="title_activity_ten_part">TenPartActivity</string>
+    <string name="title_activity_eleven_part">ElevenPartActivity</string>
+    <string name="title_activity_twelve_part">TwelvePartActivity</string>
+    <string name="title_activity_thirteen_part">ThirteenPartActivity</string>
+    <string name="title_activity_fourteen_part">FourteenPartActivity</string>
+</resources>

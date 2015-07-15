@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fitivity.tenktraining" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".WorkoutMenu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".SpeedCalculationService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name=".OnePartActivity"
+            android:label="@string/title_activity_one_part" >
+        </activity>
+        <activity
+            android:name=".TwoPartActivity"
+            android:label="@string/title_activity_two_part" >
+        </activity>
+        <activity
+            android:name=".ThreePartActivity"
+            android:label="@string/title_activity_three_part" >
+        </activity>
+        <activity
+            android:name=".FourPartActivity"
+            android:label="@string/title_activity_four_part" >
+        </activity>
+        <activity
+            android:name=".FivePartActivity"
+            android:label="@string/title_activity_five_part" >
+        </activity>
+        <activity
+            android:name=".SixPartActivity"
+            android:label="@string/title_activity_six_part" >
+        </activity>
+        <activity
+            android:name=".SevenPartActivity"
+            android:label="@string/title_activity_seven_part" >
+        </activity>
+        <activity
+            android:name=".EightPartActivity"
+            android:label="@string/title_activity_eight_part" >
+        </activity>
+        <activity
+            android:name=".NinePartActivity"
+            android:label="@string/title_activity_nine_part" >
+        </activity>
+        <activity
+            android:name=".TenPartActivity"
+            android:label="@string/title_activity_ten_part" >
+        </activity>
+        <activity
+            android:name=".ElevenPartActivity"
+            android:label="@string/title_activity_eleven_part" >
+        </activity>
+        <activity
+            android:name=".TwelvePartActivity"
+            android:label="@string/title_activity_twelve_part" >
+        </activity>
+        <activity
+            android:name=".ThirteenPartActivity"
+            android:label="@string/title_activity_thirteen_part" >
+        </activity>
+        <activity
+            android:name=".FourteenPartActivity"
+            android:label="@string/title_activity_fourteen_part" >
+        </activity>
+    </application>
+
+</manifest>
