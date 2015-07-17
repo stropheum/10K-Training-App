@@ -79,6 +79,226 @@
             android:name=".FourteenPartActivity"
             android:label="@string/title_activity_fourteen_part" >
         </activity>
+        <activity
+            android:name=".Workout_1_1"
+            android:label="@string/title_activity_workout_1_1" >
+        </activity>
+        <activity
+            android:name=".Workout_1_2"
+            android:label="@string/title_activity_workout_1_2" >
+        </activity>
+        <activity
+            android:name=".Workout_1_3"
+            android:label="@string/title_activity_workout_1_3" >
+        </activity>
+        <activity
+            android:name=".Workout_1_4"
+            android:label="@string/title_activity_workout_1_4" >
+        </activity>
+        <activity
+            android:name=".Workout_1_5"
+            android:label="@string/title_activity_workout_1_5" >
+        </activity>
+        <activity
+            android:name=".Workout_1_6"
+            android:label="@string/title_activity_workout_1_6" >
+        </activity>
+        <activity
+            android:name=".Workout_1_7"
+            android:label="@string/title_activity_workout_1_7" >
+        </activity>
+        <activity
+            android:name=".RestDayActivity"
+            android:label="@string/title_activity_rest_day" >
+        </activity>
+        <activity
+            android:name=".Workout_2_2"
+            android:label="@string/title_activity_workout_2_2" >
+        </activity>
+        <activity
+            android:name=".Workout_2_3"
+            android:label="@string/title_activity_workout_2_3" >
+        </activity>
+        <activity
+            android:name=".Workout_2_4"
+            android:label="@string/title_activity_workout_2_4" >
+        </activity>
+        <activity
+            android:name=".Workout_2_5"
+            android:label="@string/title_activity_workout_2_5" >
+        </activity>
+        <activity
+            android:name=".Workout_2_6"
+            android:label="@string/title_activity_workout_2_6" >
+        </activity>
+        <activity
+            android:name=".Workout_2_7"
+            android:label="@string/title_activity_workout_2_7" >
+        </activity>
+        <activity
+            android:name=".Workout_3_2"
+            android:label="@string/title_activity_workout_3_2" >
+        </activity>
+        <activity
+            android:name=".Workout_3_3"
+            android:label="@string/title_activity_workout_3_3" >
+        </activity>
+        <activity
+            android:name=".Workout_3_4"
+            android:label="@string/title_activity_workout_3_4" >
+        </activity>
+        <activity
+            android:name=".Workout_3_5"
+            android:label="@string/title_activity_workout_3_5" >
+        </activity>
+        <activity
+            android:name=".Workout_3_7"
+            android:label="@string/title_activity_workout_3_7" >
+        </activity>
+        <activity
+            android:name=".Workout_4_2"
+            android:label="@string/title_activity_workout_4_2" >
+        </activity>
+        <activity
+            android:name=".Workout_4_3"
+            android:label="@string/title_activity_workout_4_3" >
+        </activity>
+        <activity
+            android:name=".Workout_4_4"
+            android:label="@string/title_activity_workout_4_4" >
+        </activity>
+        <activity
+            android:name=".Workout_4_5"
+            android:label="@string/title_activity_workout_4_5" >
+        </activity>
+        <activity
+            android:name=".Workout_4_7"
+            android:label="@string/title_activity_workout_4_7" >
+        </activity>
+        <activity
+            android:name=".Workout_5_2"
+            android:label="@string/title_activity_workout_5_2" >
+        </activity>
+        <activity
+            android:name=".Workout_5_4"
+            android:label="@string/title_activity_workout_5_4" >
+        </activity>
+        <activity
+            android:name=".Workout_5_5"
+            android:label="@string/title_activity_workout_5_5" >
+        </activity>
+        <activity
+            android:name=".Workout_5_7"
+            android:label="@string/title_activity_workout_5_7" >
+        </activity>
+        <activity
+            android:name=".Workout_6_2"
+            android:label="@string/title_activity_workout_6_2" >
+        </activity>
+        <activity
+            android:name=".Workout_6_3"
+            android:label="@string/title_activity_workout_6_3" >
+        </activity>
+        <activity
+            android:name=".Workout_6_4"
+            android:label="@string/title_activity_workout_6_4" >
+        </activity>
+        <activity
+            android:name=".Workout_6_5"
+            android:label="@string/title_activity_workout_6_5" >
+        </activity>
+        <activity
+            android:name=".Workout_6_7"
+            android:label="@string/title_activity_workout_6_7" >
+        </activity>
+        <activity
+            android:name=".Workout_7_3"
+            android:label="@string/title_activity_workout_7_3" >
+        </activity>
+        <activity
+            android:name=".Workout_7_5"
+            android:label="@string/title_activity_workout_7_5" >
+        </activity>
+        <activity
+            android:name=".Workout_7_7"
+            android:label="@string/title_activity_workout_7_7" >
+        </activity>
+        <activity
+            android:name=".Workout_8_2"
+            android:label="@string/title_activity_workout_8_2" >
+        </activity>
+        <activity
+            android:name=".Workout_8_3"
+            android:label="@string/title_activity_workout_8_3" >
+        </activity>
+        <activity
+            android:name=".Workout_8_5"
+            android:label="@string/title_activity_workout_8_5" >
+        </activity>
+        <activity
+            android:name=".Workout_8_7"
+            android:label="@string/title_activity_workout_8_7" >
+        </activity>
+        <activity
+            android:name=".Workout_9_2"
+            android:label="@string/title_activity_workout_9_2" >
+        </activity>
+        <activity
+            android:name=".Workout_9_3"
+            android:label="@string/title_activity_workout_9_3" >
+        </activity>
+        <activity
+            android:name=".FifteenPartActivity"
+            android:label="@string/title_activity_fifteen_part" >
+        </activity>
+        <activity
+            android:name=".Workout_9_4"
+            android:label="@string/title_activity_workout_9_4" >
+        </activity>
+        <activity
+            android:name=".Workout_9_5"
+            android:label="@string/title_activity_workout_9_5" >
+        </activity>
+        <activity
+            android:name=".Workout_9_7"
+            android:label="@string/title_activity_workout_9_7" >
+        </activity>
+        <activity
+            android:name=".Workout_10_2"
+            android:label="@string/title_activity_workout_10_2" >
+        </activity>
+        <activity
+            android:name=".Workout_10_3"
+            android:label="@string/title_activity_workout_10_3" >
+        </activity>
+        <activity
+            android:name=".Workout_10_5"
+            android:label="@string/title_activity_workout_10_5" >
+        </activity>
+        <activity
+            android:name=".Workout_10_7"
+            android:label="@string/title_activity_workout_10_7" >
+        </activity>
+        <activity
+            android:name=".Workout_11_3"
+            android:label="@string/title_activity_workout_11_3" >
+        </activity>
+        <activity
+            android:name=".Workout_11_5"
+            android:label="@string/title_activity_workout_11_5" >
+        </activity>
+        <activity
+            android:name=".Workout_11_7"
+            android:label="@string/title_activity_workout_11_7" >
+        </activity>
+        <activity
+            android:name=".Workout_12_3"
+            android:label="@string/title_activity_workout_12_3" >
+        </activity>
+        <activity
+            android:name=".Workout_12_4"
+            android:label="@string/title_activity_workout_12_4" >
+        </activity>
     </application>
 
 </manifest>

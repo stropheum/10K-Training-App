@@ -5,7 +5,7 @@
     android:paddingLeft="0dp"
     android:paddingRight="0dp"
     android:paddingTop="0dp"
-    tools:context=".SevenPartActivity"
+    tools:context=".TenPartActivity"
     android:visibility="visible"
     android:background="#FFFFFFFF"
     android:id="@+id/mainLayout"
