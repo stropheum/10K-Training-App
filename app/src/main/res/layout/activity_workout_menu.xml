@@ -80,12 +80,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 1"
+                    android:text="Day 1"
                     android:id="@+id/row_1_1_text"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_1_1"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -106,12 +115,20 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 2"
+                    android:text="Day 2"
                     android:id="@+id/row_1_2_text"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_1_2"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -132,12 +149,20 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 3"
+                    android:text="Day 3"
                     android:id="@+id/row_1_3_text"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_1_3"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -158,12 +183,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 4"
+                    android:text="Day 4"
                     android:id="@+id/row_1_4_text"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_1_4"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -184,12 +218,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 5"
+                    android:text="Day 5"
                     android:id="@+id/row_1_5_text"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_1_5"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -210,12 +253,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 6"
+                    android:text="Day 6"
                     android:id="@+id/row_1_6_text"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_1_6"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -236,12 +288,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 7"
+                    android:text="Day 7"
                     android:id="@+id/row_1_7_text"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_1_7"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -279,12 +340,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 1"
+                    android:text="Day 1"
                     android:id="@+id/textView_2_1"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/box_2_1"
+                android:checked="false"
+                android:gravity="center"
+                android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -305,12 +375,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 2"
+                    android:text="Day 2"
                     android:id="@+id/textView_2_2"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_2_2"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -331,12 +410,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 3"
+                    android:text="Day 3"
                     android:id="@+id/textView_2_3"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_2_3"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -357,12 +445,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 4"
+                    android:text="Day 4"
                     android:id="@+id/textView_2_4"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_2_4"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -383,12 +480,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 5"
+                    android:text="Day 5"
                     android:id="@+id/textView_2_5"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_2_5"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -409,12 +515,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 6"
+                    android:text="Day 6"
                     android:id="@+id/textView_2_6"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_2_6"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -435,12 +550,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 7"
+                    android:text="Day 7"
                     android:id="@+id/textView_2_7"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_2_7"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -478,12 +602,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 1"
+                    android:text="Day 1"
                     android:id="@+id/textView_3_1"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_3_1"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -504,12 +637,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 2"
+                    android:text="Day 2"
                     android:id="@+id/textView_3_2"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_3_2"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -530,12 +672,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 3"
+                    android:text="Day 3"
                     android:id="@+id/textView_3_3"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_3_3"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -556,12 +707,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 4"
+                    android:text="Day 4"
                     android:id="@+id/textView_3_4"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_3_4"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -582,12 +742,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 5"
+                    android:text="Day 5"
                     android:id="@+id/textView_3_5"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_3_5"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -608,12 +777,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 6"
+                    android:text="Day 6"
                     android:id="@+id/textView_3_6"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_3_6"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -634,12 +812,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 7"
+                    android:text="Day 7"
                     android:id="@+id/textView_3_7"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_3_7"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -677,12 +864,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 1"
+                    android:text="Day 1"
                     android:id="@+id/textView_4_1"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_4_1"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -703,12 +899,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 2"
+                    android:text="Day 2"
                     android:id="@+id/textView_4_2"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_4_2"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -729,12 +934,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 3"
+                    android:text="Day 3"
                     android:id="@+id/textView_4_3"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_4_3"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -755,12 +969,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 4"
+                    android:text="Day 4"
                     android:id="@+id/textView_4_4"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_4_4"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -781,12 +1004,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 5"
+                    android:text="Day 5"
                     android:id="@+id/textView_4_5"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_4_5"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -807,12 +1039,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 6"
+                    android:text="Day 6"
                     android:id="@+id/textView_4_6"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_4_6"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -833,12 +1074,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 7"
+                    android:text="Day 7"
                     android:id="@+id/textView_4_7"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_4_7"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -876,12 +1126,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 1"
+                    android:text="Day 1"
                     android:id="@+id/textView_5_1"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_5_1"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -902,12 +1161,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 2"
+                    android:text="Day 2"
                     android:id="@+id/textView_5_2"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_5_2"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -928,12 +1196,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 3"
+                    android:text="Day 3"
                     android:id="@+id/textView_5_3"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_5_3"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -954,12 +1231,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 4"
+                    android:text="Day 4"
                     android:id="@+id/textView_5_4"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_5_4"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -980,12 +1266,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 5"
+                    android:text="Day 5"
                     android:id="@+id/textView_5_5"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_5_5"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1006,12 +1301,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 6"
+                    android:text="Day 6"
                     android:id="@+id/textView_5_6"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_5_6"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1032,12 +1336,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 7"
+                    android:text="Day 7"
                     android:id="@+id/textView_5_7"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_5_7"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1075,12 +1388,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 1"
+                    android:text="Day 1"
                     android:id="@+id/textView_6_1"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/box_6_1"
+                android:checked="false"
+                android:gravity="center"
+                android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1101,12 +1423,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 2"
+                    android:text="Day 2"
                     android:id="@+id/textView_6_2"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_6_2"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1127,12 +1458,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 3"
+                    android:text="Day 3"
                     android:id="@+id/textView1_6_3"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_6_3"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1153,12 +1493,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 4"
+                    android:text="Day 4"
                     android:id="@+id/textView_6_4"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_6_4"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1179,12 +1528,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 5"
+                    android:text="Day 5"
                     android:id="@+id/textView_6_5"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_6_5"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1205,12 +1563,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 6"
+                    android:text="Day 6"
                     android:id="@+id/textView_6_6"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_6_6"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1231,12 +1598,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 7"
+                    android:text="Day 7"
                     android:id="@+id/textView_6_7"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_6_7"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1274,12 +1650,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 1"
+                    android:text="Day 1"
                     android:id="@+id/textView_7_1"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_7_1"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1300,12 +1685,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 2"
+                    android:text="Day 2"
                     android:id="@+id/textView_7_2"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_7_2"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1326,12 +1720,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 3"
+                    android:text="Day 3"
                     android:id="@+id/textView_7_3"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_7_3"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1352,12 +1755,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 4"
+                    android:text="Day 4"
                     android:id="@+id/textView_7_4"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_7_4"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1378,12 +1790,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 5"
+                    android:text="Day 5"
                     android:id="@+id/textView_7_5"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_7_5"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1404,12 +1825,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 6"
+                    android:text="Day 6"
                     android:id="@+id/textView_7_6"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_7_6"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1430,12 +1860,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 7"
+                    android:text="Day 7"
                     android:id="@+id/textView_7_7"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_7_7"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1473,12 +1912,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 1"
+                    android:text="Day 1"
                     android:id="@+id/textView_8_1"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_8_1"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1499,12 +1947,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 2"
+                    android:text="Day 2"
                     android:id="@+id/textView_8_2"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_8_2"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1525,12 +1982,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 3"
+                    android:text="Day 3"
                     android:id="@+id/textView_8_3"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_8_3"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1551,12 +2017,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 4"
+                    android:text="Day 4"
                     android:id="@+id/textView_8_4"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_8_4"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1577,12 +2052,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 5"
+                    android:text="Day 5"
                     android:id="@+id/textView_8_5"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_8_5"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1603,12 +2087,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 6"
+                    android:text="Day 6"
                     android:id="@+id/textView_8_6"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_8_6"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1629,12 +2122,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 7"
+                    android:text="Day 7"
                     android:id="@+id/textView_8_7"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_8_7"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1672,12 +2174,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 1"
+                    android:text="Day 1"
                     android:id="@+id/textView_9_1"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_9_1"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1698,12 +2209,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 2"
+                    android:text="Day 2"
                     android:id="@+id/textView_9_2"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_9_2"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1724,12 +2244,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 3"
+                    android:text="Day 3"
                     android:id="@+id/textView_9_3"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_9_3"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1750,12 +2279,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 4"
+                    android:text="Day 4"
                     android:id="@+id/textView_9_4"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_9_4"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1776,12 +2314,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 5"
+                    android:text="Day 5"
                     android:id="@+id/textView_9_5"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_9_5"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1802,12 +2349,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 6"
+                    android:text="Day 6"
                     android:id="@+id/textView_9_6"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_9_6"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1828,12 +2384,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 7"
+                    android:text="Day 7"
                     android:id="@+id/textView_9_7"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_9_7"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1871,12 +2436,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 1"
+                    android:text="Day 1"
                     android:id="@+id/textView_10_1"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_10_1"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1897,12 +2471,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 2"
+                    android:text="Day 2"
                     android:id="@+id/textView_10_2"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_10_2"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1923,12 +2506,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 3"
+                    android:text="Day 3"
                     android:id="@+id/textView_10_3"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_10_3"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1949,12 +2541,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 4"
+                    android:text="Day 4"
                     android:id="@+id/textView_10_4"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_10_4"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1975,12 +2576,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 5"
+                    android:text="Day 5"
                     android:id="@+id/textView_10_5"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_10_5"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -2001,12 +2611,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 6"
+                    android:text="Day 6"
                     android:id="@+id/textView_10_6"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_10_6"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -2027,12 +2646,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 7"
+                    android:text="Day 7"
                     android:id="@+id/textView_10_7"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_10_7"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -2070,12 +2698,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 1"
+                    android:text="Day 1"
                     android:id="@+id/textView_11_1"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_11_1"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -2096,12 +2733,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 2"
+                    android:text="Day 2"
                     android:id="@+id/textView_11_2"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_11_2"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -2122,12 +2768,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 3"
+                    android:text="Day 3"
                     android:id="@+id/textView_11_3"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_11_3"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -2148,12 +2803,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 4"
+                    android:text="Day 4"
                     android:id="@+id/textView_11_4"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_11_4"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -2174,12 +2838,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 5"
+                    android:text="Day 5"
                     android:id="@+id/textView_11_5"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_11_5"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -2200,12 +2873,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 6"
+                    android:text="Day 6"
                     android:id="@+id/textView_11_6"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_11_6"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -2226,12 +2908,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 7"
+                    android:text="Day 7"
                     android:id="@+id/textView_11_7"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_11_7"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -2269,12 +2960,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 1"
+                    android:text="Day 1"
                     android:id="@+id/textView_12_1"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_12_1"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -2295,12 +2995,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 2"
+                    android:text="Day 2"
                     android:id="@+id/textView_12_2"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_12_2"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -2321,12 +3030,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 3"
+                    android:text="Day 3"
                     android:id="@+id/textView_12_3"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_12_3"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -2347,12 +3065,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 4"
+                    android:text="Day 4"
                     android:id="@+id/textView_12_4"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_12_4"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -2373,12 +3100,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 5"
+                    android:text="Day 5"
                     android:id="@+id/textView_12_5"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_12_5"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -2399,12 +3135,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 6"
+                    android:text="Day 6"
                     android:id="@+id/textView_12_6"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_12_6"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -2425,12 +3170,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workout 7"
+                    android:text="Day 7"
                     android:id="@+id/textView_12_7"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="45dp"
+                    android:paddingLeft="50dp"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:paddingRight="50dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box_12_7"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingRight="40dp"/>
             </LinearLayout>
 
         </LinearLayout>
