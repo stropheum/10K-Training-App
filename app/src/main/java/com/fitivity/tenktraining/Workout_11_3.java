@@ -13,8 +13,8 @@ public class Workout_11_3 extends TwoPartActivity {
         PART_ONE_DURATION    = 70 * 100 * 60;
         PART_TWO_DURATION    = 20 * 1000 * 60;
 
-        PART_ONE_GOAL_PACE    = 7.4 * 1000 * 60;
-        PART_TWO_GOAL_PACE    = 15 * 1000 * 60;
+        PART_ONE_GOAL_PACE    = 7.4;
+        PART_TWO_GOAL_PACE    = 15;
 
         PART_ONE_SECONDARY_TITLE    = "7:24 min/mile";
         PART_TWO_SECONDARY_TITLE    = "15:00 min/mile";

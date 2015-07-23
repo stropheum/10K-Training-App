@@ -18,13 +18,13 @@ public class Workout_1_7 extends SevenPartActivity {
         PART_SIX_DURATION      = 10  * 1000 * 60;
         PART_SEVEN_DURATION    = 15  * 1000 * 60;
 
-        PART_ONE_GOAL_PACE      = 7.4 * 1000  * 60;
-        PART_TWO_GOAL_PACE      = 10  * 1000  * 60;
-        PART_THREE_GOAL_PACE    = 7.4 * 1000  * 60;
-        PART_FOUR_GOAL_PACE     = 10  * 1000  * 60;
-        PART_FIVE_GOAL_PACE     = 7.4 * 1000  * 60;
-        PART_SIX_GOAL_PACE      = 10  * 1000  * 60;
-        PART_SEVEN_GOAL_PACE    = 15  * 1000  * 60;
+        PART_ONE_GOAL_PACE      = 7.4;
+        PART_TWO_GOAL_PACE      = 10 ;
+        PART_THREE_GOAL_PACE    = 7.4;
+        PART_FOUR_GOAL_PACE     = 10 ;
+        PART_FIVE_GOAL_PACE     = 7.4;
+        PART_SIX_GOAL_PACE      = 10 ;
+        PART_SEVEN_GOAL_PACE    = 15 ;
 
         PART_ONE_SECONDARY_TITLE      = "7:24 min/mile";
         PART_TWO_SECONDARY_TITLE      = "10:00 min/mile";

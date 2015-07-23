@@ -25,20 +25,20 @@ public class Workout_2_5 extends FourteenPartActivity {
         PART_THIRTEEN_DURATION = 30 * 1000 * 60;
         PART_FOURTEEN_DURATION = 15 * 1000 * 60;
 
-        PART_ONE_GOAL_PACE      = 7.4 * 1000 * 60;
-        PART_TWO_GOAL_PACE      = 15  * 1000 * 60;
-        PART_THREE_GOAL_PACE    = 7.4 * 1000 * 60;
-        PART_FOUR_GOAL_PACE     = 15  * 1000 * 60;
-        PART_FIVE_GOAL_PACE     = 7.4 * 1000 * 60;
-        PART_SIX_GOAL_PACE      = 15  * 1000 * 60;
-        PART_SEVEN_GOAL_PACE    = 7.4 * 1000 * 60;
-        PART_EIGHT_GOAL_PACE    = 15  * 1000 * 60;
-        PART_NINE_GOAL_PACE     = 7.4 * 1000 * 60;
-        PART_TEN_GOAL_PACE      = 15  * 1000 * 60;
-        PART_ELEVEN_GOAL_PACE   = 7.4 * 1000 * 60;
-        PART_TWELVE_GOAL_PACE   = 15  * 1000 * 60;
-        PART_THIRTEEN_GOAL_PACE = 7.4 * 1000 * 60;
-        PART_FOURTEEN_GOAL_PACE = 15  * 1000 * 60;
+        PART_ONE_GOAL_PACE      = 7.4;
+        PART_TWO_GOAL_PACE      = 15 ;
+        PART_THREE_GOAL_PACE    = 7.4;
+        PART_FOUR_GOAL_PACE     = 15 ;
+        PART_FIVE_GOAL_PACE     = 7.4;
+        PART_SIX_GOAL_PACE      = 15 ;
+        PART_SEVEN_GOAL_PACE    = 7.4;
+        PART_EIGHT_GOAL_PACE    = 15 ;
+        PART_NINE_GOAL_PACE     = 7.4;
+        PART_TEN_GOAL_PACE      = 15 ;
+        PART_ELEVEN_GOAL_PACE   = 7.4;
+        PART_TWELVE_GOAL_PACE   = 15 ;
+        PART_THIRTEEN_GOAL_PACE = 7.4;
+        PART_FOURTEEN_GOAL_PACE = 15 ;
 
         PART_ONE_SECONDARY_TITLE      = "7:24 min/mile";
         PART_TWO_SECONDARY_TITLE      = "15:00 min/mile";

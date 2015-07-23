@@ -12,7 +12,7 @@ public class Workout_6_2 extends OnePartActivity {
     protected void onCreate(Bundle savedInstanceState) {
         PART_ONE_DURATION = 50 * 1000 * 60;
 
-        PART_ONE_GOAL_PACE = 10.0 * 1000 * 60;
+        PART_ONE_GOAL_PACE = 10.0;
 
         PART_ONE_SECONDARY_TITLE = "10:00 min/mile";
 

@@ -14,9 +14,9 @@ public class Workout_3_3 extends ThreePartActivity {
         PART_TWO_DURATION      = 20  * 1000 * 60;
         PART_THREE_DURATION    = 10  * 1000 * 60;
 
-        PART_ONE_GOAL_PACE      = 10.0 * 1000 * 60;
-        PART_TWO_GOAL_PACE      = 7.4  * 1000 * 60;
-        PART_THREE_GOAL_PACE    = 15.0 * 1000 * 60;
+        PART_ONE_GOAL_PACE      = 10.0;
+        PART_TWO_GOAL_PACE      = 7.4 ;
+        PART_THREE_GOAL_PACE    = 15.0;
 
         PART_ONE_SECONDARY_TITLE      = "10:00 min/mile";
         PART_TWO_SECONDARY_TITLE      = "7:24 min/mile";

@@ -16,11 +16,11 @@ public class Workout_11_7 extends FivePartActivity {
         PART_FOUR_DURATION   = 8 * 1000 * 60;
         PART_FIVE_DURATION   = 20 * 1000 * 60;
 
-        PART_ONE_GOAL_PACE    = 7.0 * 1000 * 60;
-        PART_TWO_GOAL_PACE    = 20.0 * 1000 * 60;
-        PART_THREE_GOAL_PACE  = 7.0 * 1000 * 60;
-        PART_FOUR_GOAL_PACE   = 20.0 * 1000 * 60;
-        PART_FIVE_GOAL_PACE   = 15.0 * 1000 * 60;
+        PART_ONE_GOAL_PACE    = 7.0;
+        PART_TWO_GOAL_PACE    = 20.0;
+        PART_THREE_GOAL_PACE  = 7.0;
+        PART_FOUR_GOAL_PACE   = 20.0;
+        PART_FIVE_GOAL_PACE   = 15.0;
 
         PART_ONE_SECONDARY_TITLE    = "7:00 min/mile";
         PART_TWO_SECONDARY_TITLE    = "20:00 min/mile";
