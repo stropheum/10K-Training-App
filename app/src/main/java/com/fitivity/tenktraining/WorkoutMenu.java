@@ -2704,7 +2704,7 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[11][6].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        startActivity(new Intent(getApplicationContext(), RaceDayActivity.class));
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
