@@ -10,32 +10,32 @@ public class Workout_2_3 extends EightPartActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        PART_ONE_DURATION      = 3  * 1000 * 60;
-        PART_TWO_DURATION      = 3  * 1000 * 60;
-        PART_THREE_DURATION    = 3  * 1000 * 60;
-        PART_FOUR_DURATION     = 3  * 1000 * 60;
-        PART_FIVE_DURATION     = 3  * 1000 * 60;
-        PART_SIX_DURATION      = 3  * 1000 * 60;
-        PART_SEVEN_DURATION    = 20 * 1000 * 60;
-        PART_EIGHT_DURATION    = 10 * 1000 * 60;
+        PART_ONE_DURATION   = 3  * 1000 * 60;
+        PART_TWO_DURATION   = 3  * 1000 * 60;
+        PART_THREE_DURATION = 3  * 1000 * 60;
+        PART_FOUR_DURATION  = 3  * 1000 * 60;
+        PART_FIVE_DURATION  = 3  * 1000 * 60;
+        PART_SIX_DURATION   = 3  * 1000 * 60;
+        PART_SEVEN_DURATION = 20 * 1000 * 60;
+        PART_EIGHT_DURATION = 10 * 1000 * 60;
 
-        PART_ONE_GOAL_PACE      = 7.4;
-        PART_TWO_GOAL_PACE      = 15 ;
-        PART_THREE_GOAL_PACE    = 7.4;
-        PART_FOUR_GOAL_PACE     = 15 ;
-        PART_FIVE_GOAL_PACE     = 7.4;
-        PART_SIX_GOAL_PACE      = 15 ;
-        PART_SEVEN_GOAL_PACE    = 7.4;
-        PART_EIGHT_GOAL_PACE    = 15 ;
+        PART_ONE_GOAL_PACE   = 7.4;
+        PART_TWO_GOAL_PACE   = 15 ;
+        PART_THREE_GOAL_PACE = 7.4;
+        PART_FOUR_GOAL_PACE  = 15 ;
+        PART_FIVE_GOAL_PACE  = 7.4;
+        PART_SIX_GOAL_PACE   = 15 ;
+        PART_SEVEN_GOAL_PACE = 7.4;
+        PART_EIGHT_GOAL_PACE = 15 ;
 
-        PART_ONE_SECONDARY_TITLE      = "7:24 min/mile";
-        PART_TWO_SECONDARY_TITLE      = "15:00 min/mile";
-        PART_THREE_SECONDARY_TITLE    = "7:24 min/mile";
-        PART_FOUR_SECONDARY_TITLE     = "15:00 min/mile";
-        PART_FIVE_SECONDARY_TITLE     = "7:24 min/mile";
-        PART_SIX_SECONDARY_TITLE      = "15:00 min/mile";
-        PART_SEVEN_SECONDARY_TITLE    = "7:24 min/mile";
-        PART_EIGHT_SECONDARY_TITLE    = "15:00 min/mile";
+        PART_ONE_SECONDARY_TITLE   = "7:24 min/mile";
+        PART_TWO_SECONDARY_TITLE   = "15:00 min/mile";
+        PART_THREE_SECONDARY_TITLE = "7:24 min/mile";
+        PART_FOUR_SECONDARY_TITLE  = "15:00 min/mile";
+        PART_FIVE_SECONDARY_TITLE  = "7:24 min/mile";
+        PART_SIX_SECONDARY_TITLE   = "15:00 min/mile";
+        PART_SEVEN_SECONDARY_TITLE = "7:24 min/mile";
+        PART_EIGHT_SECONDARY_TITLE = "15:00 min/mile";
 
         super.onCreate(savedInstanceState);
         getSupportActionBar().setCustomView(R.layout.action_bar_2_3);

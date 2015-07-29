@@ -2312,7 +2312,7 @@ public class WorkoutMenu extends ActionBarActivity {
     }
 
     /**
-     * Configures the click listener for workout button 10_1
+     * Configures the click listener for workout button 11_1
      */
     private void configureButton_11_1() {
         layout[10][0] = (LinearLayout) findViewById(R.id.row_11_1);
@@ -2341,7 +2341,7 @@ public class WorkoutMenu extends ActionBarActivity {
     }
 
     /**
-     * Configures the click listener for workout button 10_2
+     * Configures the click listener for workout button 11_2
      */
     private void configureButton_11_2() {
         layout[10][1] = (LinearLayout) findViewById(R.id.row_11_2);
@@ -2370,7 +2370,7 @@ public class WorkoutMenu extends ActionBarActivity {
     }
 
     /**
-     * Configures the click listener for workout button 10_3
+     * Configures the click listener for workout button 11_3
      */
     private void configureButton_11_3() {
         layout[10][2] = (LinearLayout) findViewById(R.id.row_11_3);
@@ -2399,7 +2399,7 @@ public class WorkoutMenu extends ActionBarActivity {
     }
 
     /**
-     * Configures the click listener for workout button 10_4
+     * Configures the click listener for workout button 11_4
      */
     private void configureButton_11_4() {
         layout[10][3] = (LinearLayout) findViewById(R.id.row_11_4);
@@ -2428,7 +2428,7 @@ public class WorkoutMenu extends ActionBarActivity {
     }
 
     /**
-     * Configures the click listener for workout button 10_5
+     * Configures the click listener for workout button 11_5
      */
     private void configureButton_11_5() {
         layout[10][4] = (LinearLayout) findViewById(R.id.row_11_5);
@@ -2457,7 +2457,7 @@ public class WorkoutMenu extends ActionBarActivity {
     }
 
     /**
-     * Configures the click listener for workout button 10_6
+     * Configures the click listener for workout button 11_6
      */
     private void configureButton_11_6() {
         layout[10][5] = (LinearLayout) findViewById(R.id.row_11_6);
@@ -2486,7 +2486,7 @@ public class WorkoutMenu extends ActionBarActivity {
     }
 
     /**
-     * Configures the click listener for workout button 10_7
+     * Configures the click listener for workout button 11_7
      */
     private void configureButton_11_7() {
         layout[10][6] = (LinearLayout) findViewById(R.id.row_11_7);
@@ -2515,7 +2515,7 @@ public class WorkoutMenu extends ActionBarActivity {
     }
 
     /**
-     * Configures the click listener for workout button 10_1
+     * Configures the click listener for workout button 12_1
      */
     private void configureButton_12_1() {
         layout[11][0] = (LinearLayout) findViewById(R.id.row_12_1);
@@ -2544,7 +2544,7 @@ public class WorkoutMenu extends ActionBarActivity {
     }
 
     /**
-     * Configures the click listener for workout button 10_2
+     * Configures the click listener for workout button 12_2
      */
     private void configureButton_12_2() {
         layout[11][1] = (LinearLayout) findViewById(R.id.row_12_2);
@@ -2573,7 +2573,7 @@ public class WorkoutMenu extends ActionBarActivity {
     }
 
     /**
-     * Configures the click listener for workout button 10_3
+     * Configures the click listener for workout button 12_3
      */
     private void configureButton_12_3() {
         layout[11][2] = (LinearLayout) findViewById(R.id.row_12_3);
@@ -2602,7 +2602,7 @@ public class WorkoutMenu extends ActionBarActivity {
     }
 
     /**
-     * Configures the click listener for workout button 10_4
+     * Configures the click listener for workout button 12_4
      */
     private void configureButton_12_4() {
         layout[11][3] = (LinearLayout) findViewById(R.id.row_12_4);
@@ -2631,7 +2631,7 @@ public class WorkoutMenu extends ActionBarActivity {
     }
 
     /**
-     * Configures the click listener for workout button 10_5
+     * Configures the click listener for workout button 12_5
      */
     private void configureButton_12_5() {
         layout[11][4] = (LinearLayout) findViewById(R.id.row_12_5);
@@ -2660,7 +2660,7 @@ public class WorkoutMenu extends ActionBarActivity {
     }
 
     /**
-     * Configures the click listener for workout button 10_6
+     * Configures the click listener for workout button 12_6
      */
     private void configureButton_12_6() {
         layout[11][5] = (LinearLayout) findViewById(R.id.row_12_6);
@@ -2689,7 +2689,7 @@ public class WorkoutMenu extends ActionBarActivity {
     }
 
     /**
-     * Configures the click listener for workout button 10_7
+     * Configures the click listener for workout button 12_7
      */
     private void configureButton_12_7() {
         layout[11][6] = (LinearLayout) findViewById(R.id.row_12_7);

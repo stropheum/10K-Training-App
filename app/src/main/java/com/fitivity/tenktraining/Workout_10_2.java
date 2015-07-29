@@ -10,11 +10,11 @@ public class Workout_10_2 extends OnePartActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        PART_ONE_DURATION    = 45 * 100 * 60;
+        PART_ONE_DURATION = 45 * 100 * 60;
 
-        PART_ONE_GOAL_PACE    = 7.4;
+        PART_ONE_GOAL_PACE = 7.4;
 
-        PART_ONE_SECONDARY_TITLE    = "7:24 min/mile";
+        PART_ONE_SECONDARY_TITLE = "7:24 min/mile";
 
         super.onCreate(savedInstanceState);
         getSupportActionBar().setCustomView(R.layout.action_bar_10_2);
