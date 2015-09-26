@@ -316,6 +316,602 @@
             android:name=".RaceDayActivity"
             android:label="@string/title_activity_race_day" >
         </activity>
+        <activity
+            android:name=".Beg_1_1"
+            android:label="@string/title_activity_beg_1_1" >
+        </activity>
+        <activity
+            android:name=".Beg_1_2"
+            android:label="@string/title_activity_beg_1_2" >
+        </activity>
+        <activity
+            android:name=".Beg_1_3"
+            android:label="@string/title_activity_beg_1_3" >
+        </activity>
+        <activity
+            android:name=".Beg_1_4"
+            android:label="@string/title_activity_beg_1_4" >
+        </activity>
+        <activity
+            android:name=".Beg_1_5"
+            android:label="@string/title_activity_beg_1_5" >
+        </activity>
+        <activity
+            android:name=".Beg_1_6"
+            android:label="@string/title_activity_beg_1_6" >
+        </activity>
+        <activity
+            android:name=".Beg_1_7"
+            android:label="@string/title_activity_beg_1_7" >
+        </activity>
+        <activity
+            android:name=".Beg_2_2"
+            android:label="@string/title_activity_beg_2_2" >
+        </activity>
+        <activity
+            android:name=".Beg_2_3"
+            android:label="@string/title_activity_beg_2_3" >
+        </activity>
+        <activity
+            android:name=".Beg_2_4"
+            android:label="@string/title_activity_beg_2_4" >
+        </activity>
+        <activity
+            android:name=".Beg_2_5"
+            android:label="@string/title_activity_beg_2_5" >
+        </activity>
+        <activity
+            android:name=".Beg_2_6"
+            android:label="@string/title_activity_beg_2_6" >
+        </activity>
+        <activity
+            android:name=".Beg_2_7"
+            android:label="@string/title_activity_beg_2_7" >
+        </activity>
+        <activity
+            android:name=".Beg_3_1"
+            android:label="@string/title_activity_beg_3_1" >
+        </activity>
+        <activity
+            android:name=".Beg_3_2"
+            android:label="@string/title_activity_beg_3_2" >
+        </activity>
+        <activity
+            android:name=".Beg_3_3"
+            android:label="@string/title_activity_beg_3_3" >
+        </activity>
+        <activity
+            android:name=".Beg_3_4"
+            android:label="@string/title_activity_beg_3_4" >
+        </activity>
+        <activity
+            android:name=".Beg_3_5"
+            android:label="@string/title_activity_beg_3_5" >
+        </activity>
+        <activity
+            android:name=".Beg_3_6"
+            android:label="@string/title_activity_beg_3_6" >
+        </activity>
+        <activity
+            android:name=".Beg_3_7"
+            android:label="@string/title_activity_beg_3_7" >
+        </activity>
+        <activity
+            android:name=".Beg_4_2"
+            android:label="@string/title_activity_beg_4_2" >
+        </activity>
+        <activity
+            android:name=".Beg_4_3"
+            android:label="@string/title_activity_beg_4_3" >
+        </activity>
+        <activity
+            android:name=".Beg_4_4"
+            android:label="@string/title_activity_beg_4_4" >
+        </activity>
+        <activity
+            android:name=".Beg_4_5"
+            android:label="@string/title_activity_beg_4_5" >
+        </activity>
+        <activity
+            android:name=".Beg_4_7"
+            android:label="@string/title_activity_beg_4_7" >
+        </activity>
+        <activity
+            android:name=".Beg_5_2"
+            android:label="@string/title_activity_beg_5_2" >
+        </activity>
+        <activity
+            android:name=".Beg_5_3"
+            android:label="@string/title_activity_beg_5_3" >
+        </activity>
+        <activity
+            android:name=".Beg_5_4"
+            android:label="@string/title_activity_beg_5_4" >
+        </activity>
+        <activity
+            android:name=".Beg_5_5"
+            android:label="@string/title_activity_beg_5_5" >
+        </activity>
+        <activity
+            android:name=".Beg_5_7"
+            android:label="@string/title_activity_beg_5_7" >
+        </activity>
+        <activity
+            android:name=".Beg_6_2"
+            android:label="@string/title_activity_beg_6_2" >
+        </activity>
+        <activity
+            android:name=".Beg_6_3"
+            android:label="@string/title_activity_beg_6_3" >
+        </activity>
+        <activity
+            android:name=".Beg_6_4"
+            android:label="@string/title_activity_beg_6_4" >
+        </activity>
+        <activity
+            android:name=".Beg_6_5"
+            android:label="@string/title_activity_beg_6_5" >
+        </activity>
+        <activity
+            android:name=".Beg_6_7"
+            android:label="@string/title_activity_beg_6_7" >
+        </activity>
+        <activity
+            android:name=".Beg_7_2"
+            android:label="@string/title_activity_beg_7_2" >
+        </activity>
+        <activity
+            android:name=".Beg_7_3"
+            android:label="@string/title_activity_beg_7_3" >
+        </activity>
+        <activity
+            android:name=".Beg_7_4"
+            android:label="@string/title_activity_beg_7_4" >
+        </activity>
+        <activity
+            android:name=".Beg_7_5"
+            android:label="@string/title_activity_beg_7_5" >
+        </activity>
+        <activity
+            android:name=".Beg_7_7"
+            android:label="@string/title_activity_beg_7_7" >
+        </activity>
+        <activity
+            android:name=".Beg_8_2"
+            android:label="@string/title_activity_beg_8_2" >
+        </activity>
+        <activity
+            android:name=".Beg_8_4"
+            android:label="@string/title_activity_beg_8_4" >
+        </activity>
+        <activity
+            android:name=".Beg_8_5"
+            android:label="@string/title_activity_beg_8_5" >
+        </activity>
+        <activity
+            android:name=".Beg_8_7"
+            android:label="@string/title_activity_beg_8_7" >
+        </activity>
+        <activity
+            android:name=".Beg_9_2"
+            android:label="@string/title_activity_beg_9_2" >
+        </activity>
+        <activity
+            android:name=".Beg_9_4"
+            android:label="@string/title_activity_beg_9_4" >
+        </activity>
+        <activity
+            android:name=".Beg_9_5"
+            android:label="@string/title_activity_beg_9_5" >
+        </activity>
+        <activity
+            android:name=".Beg_9_7"
+            android:label="@string/title_activity_beg_9_7" >
+        </activity>
+        <activity
+            android:name=".Beg_10_2"
+            android:label="@string/title_activity_beg_10_2" >
+        </activity>
+        <activity
+            android:name=".Beg_10_3"
+            android:label="@string/title_activity_beg_10_3" >
+        </activity>
+        <activity
+            android:name=".Beg_10_5"
+            android:label="@string/title_activity_beg_10_5" >
+        </activity>
+        <activity
+            android:name=".Beg_10_7"
+            android:label="@string/title_activity_beg_10_7" >
+        </activity>
+        <activity
+            android:name=".Beg_11_2"
+            android:label="@string/title_activity_beg_11_2" >
+        </activity>
+        <activity
+            android:name=".Beg_11_4"
+            android:label="@string/title_activity_beg_11_4" >
+        </activity>
+        <activity
+            android:name=".Beg_11_5"
+            android:label="@string/title_activity_beg_11_5" >
+        </activity>
+        <activity
+            android:name=".Beg_11_7"
+            android:label="@string/title_activity_beg_11_7" >
+        </activity>
+        <activity
+            android:name=".Beg_12_2"
+            android:label="@string/title_activity_beg_12_2" >
+        </activity>
+        <activity
+            android:name=".Beg_12_3"
+            android:label="@string/title_activity_beg_12_3" >
+        </activity>
+        <activity
+            android:name=".Beg_12_4"
+            android:label="@string/title_activity_beg_12_4" >
+        </activity>
+        <activity
+            android:name=".Com_1_1"
+            android:label="@string/title_activity_com_1_1" >
+        </activity>
+        <activity
+            android:name=".Com_1_2"
+            android:label="@string/title_activity_com_1_2" >
+        </activity>
+        <activity
+            android:name=".Com_1_3"
+            android:label="@string/title_activity_com_1_3" >
+        </activity>
+        <activity
+            android:name=".Com_1_4"
+            android:label="@string/title_activity_com_1_4" >
+        </activity>
+        <activity
+            android:name=".Com_1_5"
+            android:label="@string/title_activity_com_1_5" >
+        </activity>
+        <activity
+            android:name=".Com_1_7"
+            android:label="@string/title_activity_com_1_7" >
+        </activity>
+        <activity
+            android:name=".Com_2_2"
+            android:label="@string/title_activity_com_2_2" >
+        </activity>
+        <activity
+            android:name=".Com_2_3"
+            android:label="@string/title_activity_com_2_3" >
+        </activity>
+        <activity
+            android:name=".Com_2_4"
+            android:label="@string/title_activity_com_2_4" >
+        </activity>
+        <activity
+            android:name=".Com_2_5"
+            android:label="@string/title_activity_com_2_5" >
+        </activity>
+        <activity
+            android:name=".Com_2_7"
+            android:label="@string/title_activity_com_2_7" >
+        </activity>
+        <activity
+            android:name=".Com_3_2"
+            android:label="@string/title_activity_com_3_2" >
+        </activity>
+        <activity
+            android:name=".Com_3_3"
+            android:label="@string/title_activity_com_3_3" >
+        </activity>
+        <activity
+            android:name=".Com_3_4"
+            android:label="@string/title_activity_com_3_4" >
+        </activity>
+        <activity
+            android:name=".Com_3_5"
+            android:label="@string/title_activity_com_3_5" >
+        </activity>
+        <activity
+            android:name=".Com_3_7"
+            android:label="@string/title_activity_com_3_7" >
+        </activity>
+        <activity
+            android:name=".Com_4_2"
+            android:label="@string/title_activity_com_4_2" >
+        </activity>
+        <activity
+            android:name=".Com_4_3"
+            android:label="@string/title_activity_com_4_3" >
+        </activity>
+        <activity
+            android:name=".Com_4_5"
+            android:label="@string/title_activity_com_4_5" >
+        </activity>
+        <activity
+            android:name=".Com_4_6"
+            android:label="@string/title_activity_com_4_6" >
+        </activity>
+        <activity
+            android:name=".Com_4_7"
+            android:label="@string/title_activity_com_4_7" >
+        </activity>
+        <activity
+            android:name=".Com_5_2"
+            android:label="@string/title_activity_com_5_2" >
+        </activity>
+        <activity
+            android:name=".Com_5_3"
+            android:label="@string/title_activity_com_5_3" >
+        </activity>
+        <activity
+            android:name=".Com_5_4"
+            android:label="@string/title_activity_com_5_4" >
+        </activity>
+        <activity
+            android:name=".Com_5_5"
+            android:label="@string/title_activity_com_5_5" >
+        </activity>
+        <activity
+            android:name=".Com_5_7"
+            android:label="@string/title_activity_com_5_7" >
+        </activity>
+        <activity
+            android:name=".Com_6_2"
+            android:label="@string/title_activity_com_6_2" >
+        </activity>
+        <activity
+            android:name=".Com_6_3"
+            android:label="@string/title_activity_com_6_3" >
+        </activity>
+        <activity
+            android:name=".Com_6_4"
+            android:label="@string/title_activity_com_6_4" >
+        </activity>
+        <activity
+            android:name=".Com_6_6"
+            android:label="@string/title_activity_com_6_6" >
+        </activity>
+        <activity
+            android:name=".Com_6_7"
+            android:label="@string/title_activity_com_6_7" >
+        </activity>
+        <activity
+            android:name=".Com_7_2"
+            android:label="@string/title_activity_com_7_2" >
+        </activity>
+        <activity
+            android:name=".Com_7_3"
+            android:label="@string/title_activity_com_7_3" >
+        </activity>
+        <activity
+            android:name=".Com_7_5"
+            android:label="@string/title_activity_com_7_5" >
+        </activity>
+        <activity
+            android:name=".Com_7_7"
+            android:label="@string/title_activity_com_7_7" >
+        </activity>
+        <activity
+            android:name=".Com_8_2"
+            android:label="@string/title_activity_com_8_2" >
+        </activity>
+        <activity
+            android:name=".Com_8_3"
+            android:label="@string/title_activity_com_8_3" >
+        </activity>
+        <activity
+            android:name=".Com_8_4"
+            android:label="@string/title_activity_com_8_4" >
+        </activity>
+        <activity
+            android:name=".Com_8_5"
+            android:label="@string/title_activity_com_8_5" >
+        </activity>
+        <activity
+            android:name=".Com_8_7"
+            android:label="@string/title_activity_com_8_7" >
+        </activity>
+        <activity
+            android:name=".Com_9_2"
+            android:label="@string/title_activity_com_9_2" >
+        </activity>
+        <activity
+            android:name=".Com_9_4"
+            android:label="@string/title_activity_com_9_4" >
+        </activity>
+        <activity
+            android:name=".Com_9_7"
+            android:label="@string/title_activity_com_9_7" >
+        </activity>
+        <activity
+            android:name=".Com_10_3"
+            android:label="@string/title_activity_com_10_3" >
+        </activity>
+        <activity
+            android:name=".Com_10_4"
+            android:label="@string/title_activity_com_10_4" >
+        </activity>
+        <activity
+            android:name=".Adv_1_1"
+            android:label="@string/title_activity_adv_1_1" >
+        </activity>
+        <activity
+            android:name=".Adv_1_2"
+            android:label="@string/title_activity_adv_1_2" >
+        </activity>
+        <activity
+            android:name=".Adv_1_3"
+            android:label="@string/title_activity_adv_1_3" >
+        </activity>
+        <activity
+            android:name=".Adv_1_4"
+            android:label="@string/title_activity_adv_1_4" >
+        </activity>
+        <activity
+            android:name=".Adv_1_5"
+            android:label="@string/title_activity_adv_1_5" >
+        </activity>
+        <activity
+            android:name=".Adv_1_7"
+            android:label="@string/title_activity_adv_1_7" >
+        </activity>
+        <activity
+            android:name=".Adv_2_2"
+            android:label="@string/title_activity_adv_2_2" >
+        </activity>
+        <activity
+            android:name=".Adv_2_3"
+            android:label="@string/title_activity_adv_2_3" >
+        </activity>
+        <activity
+            android:name=".Adv_2_4"
+            android:label="@string/title_activity_adv_2_4" >
+        </activity>
+        <activity
+            android:name=".Adv_2_5"
+            android:label="@string/title_activity_adv_2_5" >
+        </activity>
+        <activity
+            android:name=".Adv_2_7"
+            android:label="@string/title_activity_adv_2_7" >
+        </activity>
+        <activity
+            android:name=".Adv_3_2"
+            android:label="@string/title_activity_adv_3_2" >
+        </activity>
+        <activity
+            android:name=".Adv_3_3"
+            android:label="@string/title_activity_adv_3_3" >
+        </activity>
+        <activity
+            android:name=".Adv_3_4"
+            android:label="@string/title_activity_adv_3_4" >
+        </activity>
+        <activity
+            android:name=".Adv_3_5"
+            android:label="@string/title_activity_adv_3_5" >
+        </activity>
+        <activity
+            android:name=".Adv_3_7"
+            android:label="@string/title_activity_adv_3_7" >
+        </activity>
+        <activity
+            android:name=".Adv_4_2"
+            android:label="@string/title_activity_adv_4_2" >
+        </activity>
+        <activity
+            android:name=".Adv_4_3"
+            android:label="@string/title_activity_adv_4_3" >
+        </activity>
+        <activity
+            android:name=".Adv_4_4"
+            android:label="@string/title_activity_adv_4_4" >
+        </activity>
+        <activity
+            android:name=".Adv_4_5"
+            android:label="@string/title_activity_adv_4_5" >
+        </activity>
+        <activity
+            android:name=".Adv_4_7"
+            android:label="@string/title_activity_adv_4_7" >
+        </activity>
+        <activity
+            android:name=".Adv_5_2"
+            android:label="@string/title_activity_adv_5_2" >
+        </activity>
+        <activity
+            android:name=".Adv_5_3"
+            android:label="@string/title_activity_adv_5_3" >
+        </activity>
+        <activity
+            android:name=".Adv_5_4"
+            android:label="@string/title_activity_adv_5_4" >
+        </activity>
+        <activity
+            android:name=".Adv_5_5"
+            android:label="@string/title_activity_adv_5_5" >
+        </activity>
+        <activity
+            android:name=".Adv_5_7"
+            android:label="@string/title_activity_adv_5_7" >
+        </activity>
+        <activity
+            android:name=".Adv_6_2"
+            android:label="@string/title_activity_adv_6_2" >
+        </activity>
+        <activity
+            android:name=".Adv_6_3"
+            android:label="@string/title_activity_adv_6_3" >
+        </activity>
+        <activity
+            android:name=".Adv_6_4"
+            android:label="@string/title_activity_adv_6_4" >
+        </activity>
+        <activity
+            android:name=".Adv_6_5"
+            android:label="@string/title_activity_adv_6_5" >
+        </activity>
+        <activity
+            android:name=".Adv_6_7"
+            android:label="@string/title_activity_adv_6_7" >
+        </activity>
+        <activity
+            android:name=".Adv_7_2"
+            android:label="@string/title_activity_adv_7_2" >
+        </activity>
+        <activity
+            android:name=".Adv_7_3"
+            android:label="@string/title_activity_adv_7_3" >
+        </activity>
+        <activity
+            android:name=".Adv_7_5"
+            android:label="@string/title_activity_adv_7_5" >
+        </activity>
+        <activity
+            android:name=".Adv_7_7"
+            android:label="@string/title_activity_adv_7_7" >
+        </activity>
+        <activity
+            android:name=".Adv_8_2"
+            android:label="@string/title_activity_adv_8_2" >
+        </activity>
+        <activity
+            android:name=".Adv_8_3"
+            android:label="@string/title_activity_adv_8_3" >
+        </activity>
+        <activity
+            android:name=".Adv_8_4"
+            android:label="@string/title_activity_adv_8_4" >
+        </activity>
+        <activity
+            android:name=".Adv_8_7"
+            android:label="@string/title_activity_adv_8_7" >
+        </activity>
+        <activity
+            android:name=".Adv_9_2"
+            android:label="@string/title_activity_adv_9_2" >
+        </activity>
+        <activity
+            android:name=".Adv_9_4"
+            android:label="@string/title_activity_adv_9_4" >
+        </activity>
+        <activity
+            android:name=".Adv_9_5"
+            android:label="@string/title_activity_adv_9_5" >
+        </activity>
+        <activity
+            android:name=".Adv_9_7"
+            android:label="@string/title_activity_adv_9_7" >
+        </activity>
+        <activity
+            android:name=".Adv_10_2"
+            android:label="@string/title_activity_adv_10_2" >
+        </activity>
+        <activity
+            android:name=".Adv_10_3"
+            android:label="@string/title_activity_adv_10_3" >
+        </activity>
     </application>
 
 </manifest>
