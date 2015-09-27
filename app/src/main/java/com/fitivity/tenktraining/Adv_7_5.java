@@ -10,7 +10,7 @@ public class Adv_7_5 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_adv_7_5);
+        getSupportActionBar().setCustomView(R.layout.action_bar_7_5);
     }
 
     @Override
