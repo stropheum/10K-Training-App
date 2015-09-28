@@ -5,10 +5,22 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class Com_7_3 extends AppCompatActivity {
+public class Com_7_3 extends ThreePartActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        PART_ONE_DURATION   = 20 * 1000 * 60;
+        PART_TWO_DURATION   = 15 * 1000 * 60;
+        PART_THREE_DURATION = 15 * 1000 * 60;
+
+        PART_ONE_GOAL_PACE   = 6.0;
+        PART_TWO_GOAL_PACE   = 6.0;
+        PART_THREE_GOAL_PACE = 18.0;
+
+        PART_ONE_SECONDARY_TITLE   = "6:00 min/mile";
+        PART_TWO_SECONDARY_TITLE   = "6:00 min/mile";
+        PART_THREE_SECONDARY_TITLE = "18:00 min/mile";
+
         super.onCreate(savedInstanceState);
         getSupportActionBar().setCustomView(R.layout.action_bar_7_3);
     }

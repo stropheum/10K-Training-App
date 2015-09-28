@@ -5,10 +5,49 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class Com_8_3 extends AppCompatActivity {
+public class Com_8_3 extends TwelvePartActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        PART_ONE_DURATION    = 6 * 1000 * 60;
+        PART_TWO_DURATION    = 6 * 1000 * 60;
+        PART_THREE_DURATION  = 6 * 1000 * 60;
+        PART_FOUR_DURATION   = 6 * 1000 * 60;
+        PART_FIVE_DURATION   = 6 * 1000 * 60;
+        PART_SIX_DURATION    = 6 * 1000 * 60;
+        PART_SEVEN_DURATION  = 6 * 1000 * 60;
+        PART_EIGHT_DURATION  = 6 * 1000 * 60;
+        PART_NINE_DURATION   = 6 * 1000 * 60;
+        PART_TEN_DURATION    = 6 * 1000 * 60;
+        PART_ELEVEN_DURATION = 15 * 1000 * 60;
+        PART_TWELVE_DURATION = 15 * 1000 * 60;
+
+        PART_ONE_GOAL_PACE    = 6.0;
+        PART_TWO_GOAL_PACE    = 16.0;
+        PART_THREE_GOAL_PACE  = 6.0;
+        PART_FOUR_GOAL_PACE   = 16.0;
+        PART_FIVE_GOAL_PACE   = 6.0;
+        PART_SIX_GOAL_PACE    = 16.0;
+        PART_SEVEN_GOAL_PACE  = 6.0;
+        PART_EIGHT_GOAL_PACE  = 16.0;
+        PART_NINE_GOAL_PACE   = 6.0;
+        PART_TEN_GOAL_PACE    = 16.0;
+        PART_ELEVEN_GOAL_PACE = 6.0;
+        PART_TWELVE_GOAL_PACE = 18.0;
+
+        PART_ONE_SECONDARY_TITLE    = "6:00 min/mile";
+        PART_TWO_SECONDARY_TITLE    = "15:00 min/mile";
+        PART_THREE_SECONDARY_TITLE  = "6:00 min/mile";
+        PART_FOUR_SECONDARY_TITLE   = "15:00 min/mile";
+        PART_FIVE_SECONDARY_TITLE   = "6:00 min/mile";
+        PART_SIX_SECONDARY_TITLE    = "15:00 min/mile";
+        PART_SEVEN_SECONDARY_TITLE  = "6:00 min/mile";
+        PART_EIGHT_SECONDARY_TITLE  = "15:00 min/mile";
+        PART_NINE_SECONDARY_TITLE   = "6:00 min/mile";
+        PART_TEN_SECONDARY_TITLE    = "15:00 min/mile";
+        PART_ELEVEN_SECONDARY_TITLE = "6:00 min/mile";
+        PART_TWELVE_SECONDARY_TITLE = "18:00 min/mile";
+        
         super.onCreate(savedInstanceState);
         getSupportActionBar().setCustomView(R.layout.action_bar_8_3);
     }
