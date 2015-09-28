@@ -5,10 +5,16 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class Beg_4_4 extends AppCompatActivity {
+public class Beg_4_4 extends OnePartActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        PART_ONE_DURATION = 40 * 1000 * 60;
+
+        PART_ONE_GOAL_PACE = 17.0;
+
+        PART_ONE_SECONDARY_TITLE = "17:00 min/mile";
+
         super.onCreate(savedInstanceState);
         getSupportActionBar().setCustomView(R.layout.action_bar_4_4);
     }
