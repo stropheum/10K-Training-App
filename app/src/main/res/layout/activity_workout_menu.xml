@@ -332,7 +332,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_2_1"
+                    android:id="@+id/row_2_1_image"
                     android:src="@drawable/running_parts_rest"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -367,7 +367,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_2_2"
+                    android:id="@+id/row_2_2_image"
                     android:src="@drawable/running_parts_l3"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -402,7 +402,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_2_3"
+                    android:id="@+id/row_2_3_image"
                     android:src="@drawable/running_parts_l3"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -437,7 +437,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_2_4"
+                    android:id="@+id/row_2_4_image"
                     android:src="@drawable/running_parts_l4"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -472,7 +472,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_2_5"
+                    android:id="@+id/row_2_5_image"
                     android:src="@drawable/running_parts_l4"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -507,7 +507,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_2_6"
+                    android:id="@+id/row_2_6_image"
                     android:src="@drawable/running_parts_l3"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -542,7 +542,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_2_7"
+                    android:id="@+id/row_2_7_image"
                     android:src="@drawable/running_parts_l4"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -594,7 +594,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_3_1"
+                    android:id="@+id/row_3_1_image"
                     android:src="@drawable/running_parts_rest"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -629,7 +629,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_3_2"
+                    android:id="@+id/row_3_2_image"
                     android:src="@drawable/running_parts_l3"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -664,7 +664,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_3_3"
+                    android:id="@+id/row_3_3_image"
                     android:src="@drawable/running_parts_l3"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -699,7 +699,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_3_4"
+                    android:id="@+id/row_3_4_image"
                     android:src="@drawable/running_parts_l3"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -734,7 +734,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_3_5"
+                    android:id="@+id/row_3_5_image"
                     android:src="@drawable/running_parts_l4"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -769,7 +769,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_3_6"
+                    android:id="@+id/row_3_6_image"
                     android:src="@drawable/running_parts_rest"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -804,7 +804,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_3_7"
+                    android:id="@+id/row_3_7_image"
                     android:src="@drawable/running_parts_l4"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -856,7 +856,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_4_1"
+                    android:id="@+id/row_4_1_image"
                     android:src="@drawable/running_parts_rest"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -891,7 +891,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_4_2"
+                    android:id="@+id/row_4_2_image"
                     android:src="@drawable/running_parts_l4"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -926,7 +926,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_4_3"
+                    android:id="@+id/row_4_3_image"
                     android:src="@drawable/running_parts_l4"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -961,7 +961,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_4_4"
+                    android:id="@+id/row_4_4_image"
                     android:src="@drawable/running_parts_l4"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -996,7 +996,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_4_5"
+                    android:id="@+id/row_4_5_image"
                     android:src="@drawable/running_parts_l3"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -1031,7 +1031,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_4_6"
+                    android:id="@+id/row_4_6_image"
                     android:src="@drawable/running_parts_rest"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -1066,7 +1066,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_4_7"
+                    android:id="@+id/row_4_7_image"
                     android:src="@drawable/running_parts_l4"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -1118,7 +1118,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_5_1"
+                    android:id="@+id/row_5_1_image"
                     android:src="@drawable/running_parts_rest"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -1153,7 +1153,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_5_2"
+                    android:id="@+id/row_5_2_image"
                     android:src="@drawable/running_parts_l4"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -1188,7 +1188,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_5_3"
+                    android:id="@+id/row_5_3_image"
                     android:src="@drawable/running_parts_rest"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -1223,7 +1223,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_5_4"
+                    android:id="@+id/row_5_4_image"
                     android:src="@drawable/running_parts_l4"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -1258,7 +1258,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_5_5"
+                    android:id="@+id/row_5_5_image"
                     android:src="@drawable/running_parts_l4"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -1293,7 +1293,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_5_6"
+                    android:id="@+id/row_5_6_image"
                     android:src="@drawable/running_parts_rest"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -1328,7 +1328,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_5_7"
+                    android:id="@+id/row_5_7_image"
                     android:src="@drawable/running_parts_l4"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -1380,7 +1380,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_6_1"
+                    android:id="@+id/row_6_1_image"
                     android:src="@drawable/running_parts_rest"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -1415,7 +1415,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_6_2"
+                    android:id="@+id/row_6_2_image"
                     android:src="@drawable/running_parts_l3"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -1450,7 +1450,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_6_3"
+                    android:id="@+id/row_6_3_image"
                     android:src="@drawable/running_parts_l4"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -1485,7 +1485,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_6_4"
+                    android:id="@+id/row_6_4_image"
                     android:src="@drawable/running_parts_l4"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -1520,7 +1520,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_6_5"
+                    android:id="@+id/row_6_5_image"
                     android:src="@drawable/running_parts_l3"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -1555,7 +1555,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_6_6"
+                    android:id="@+id/row_6_6_image"
                     android:src="@drawable/running_parts_rest"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -1590,7 +1590,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_6_7"
+                    android:id="@+id/row_6_7_image"
                     android:src="@drawable/running_parts_l3"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -1642,7 +1642,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_7_1"
+                    android:id="@+id/row_7_1_image"
                     android:src="@drawable/running_parts_rest"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -1677,7 +1677,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_7_2"
+                    android:id="@+id/row_7_2_image"
                     android:src="@drawable/running_parts_rest"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -1712,7 +1712,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_7_3"
+                    android:id="@+id/row_7_3_image"
                     android:src="@drawable/running_parts_l4"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -1747,7 +1747,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_7_4"
+                    android:id="@+id/row_7_4_image"
                     android:src="@drawable/running_parts_rest"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -1782,7 +1782,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_7_5"
+                    android:id="@+id/row_7_5_image"
                     android:src="@drawable/running_parts_l4"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -1817,7 +1817,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_7_6"
+                    android:id="@+id/row_7_6_image"
                     android:src="@drawable/running_parts_rest"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -1852,7 +1852,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_7_7"
+                    android:id="@+id/row_7_7_image"
                     android:src="@drawable/running_parts_l4"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -1904,7 +1904,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_8_1"
+                    android:id="@+id/row_8_1_image"
                     android:src="@drawable/running_parts_rest"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -1939,7 +1939,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_8_2"
+                    android:id="@+id/row_8_2_image"
                     android:src="@drawable/running_parts_l4"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -1974,7 +1974,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_8_3"
+                    android:id="@+id/row_8_3_image"
                     android:src="@drawable/running_parts_l4"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -2009,7 +2009,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_8_4"
+                    android:id="@+id/row_8_4_image"
                     android:src="@drawable/running_parts_rest"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -2044,7 +2044,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_8_5"
+                    android:id="@+id/row_8_5_image"
                     android:src="@drawable/running_parts_l3"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -2079,7 +2079,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_8_6"
+                    android:id="@+id/row_8_6_image"
                     android:src="@drawable/running_parts_rest"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -2114,7 +2114,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_8_7"
+                    android:id="@+id/row_8_7_image"
                     android:src="@drawable/running_parts_l3"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -2166,7 +2166,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_9_1"
+                    android:id="@+id/row_9_1_image"
                     android:src="@drawable/running_parts_rest"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -2201,7 +2201,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_9_2"
+                    android:id="@+id/row_9_2_image"
                     android:src="@drawable/running_parts_l3"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -2236,7 +2236,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_9_3"
+                    android:id="@+id/row_9_3_image"
                     android:src="@drawable/running_parts_l3"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -2271,7 +2271,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_9_4"
+                    android:id="@+id/row_9_4_image"
                     android:src="@drawable/running_parts_l3"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -2306,7 +2306,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_9_5"
+                    android:id="@+id/row_9_5_image"
                     android:src="@drawable/running_parts_l4"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -2341,7 +2341,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_9_6"
+                    android:id="@+id/row_9_6_image"
                     android:src="@drawable/running_parts_rest"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -2376,7 +2376,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_9_7"
+                    android:id="@+id/row_9_7_image"
                     android:src="@drawable/running_parts_l3"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -2428,7 +2428,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_10_1"
+                    android:id="@+id/row_10_1_image"
                     android:src="@drawable/running_parts_rest"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -2463,7 +2463,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_10_2"
+                    android:id="@+id/row_10_2_image"
                     android:src="@drawable/running_parts_l4"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -2498,7 +2498,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_10_3"
+                    android:id="@+id/row_10_3_image"
                     android:src="@drawable/running_parts_l4"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -2533,7 +2533,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_10_4"
+                    android:id="@+id/row_10_4_image"
                     android:src="@drawable/running_parts_rest"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -2568,7 +2568,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_10_5"
+                    android:id="@+id/row_10_5_image"
                     android:src="@drawable/running_parts_l4"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -2603,7 +2603,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_10_6"
+                    android:id="@+id/row_10_6_image"
                     android:src="@drawable/running_parts_rest"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -2638,7 +2638,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_10_7"
+                    android:id="@+id/row_10_7_image"
                     android:src="@drawable/running_parts_l3"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -2690,7 +2690,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_11_1"
+                    android:id="@+id/row_11_1_image"
                     android:src="@drawable/running_parts_rest"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -2725,7 +2725,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_11_2"
+                    android:id="@+id/row_11_2_image"
                     android:src="@drawable/running_parts_rest"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -2760,7 +2760,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_11_3"
+                    android:id="@+id/row_11_3_image"
                     android:src="@drawable/running_parts_l4"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -2795,7 +2795,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_11_4"
+                    android:id="@+id/row_11_4_image"
                     android:src="@drawable/running_parts_rest"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -2830,7 +2830,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_11_5"
+                    android:id="@+id/row_11_5_image"
                     android:src="@drawable/running_parts_l3"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -2865,7 +2865,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_11_6"
+                    android:id="@+id/row_11_6_image"
                     android:src="@drawable/running_parts_rest"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -2900,7 +2900,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_11_7"
+                    android:id="@+id/row_11_7_image"
                     android:src="@drawable/running_parts_l3"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -2952,7 +2952,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_12_1"
+                    android:id="@+id/row_12_1_image"
                     android:src="@drawable/running_parts_rest"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -2987,7 +2987,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_12_2"
+                    android:id="@+id/row_12_2_image"
                     android:src="@drawable/running_parts_rest"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -3022,7 +3022,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_12_3"
+                    android:id="@+id/row_12_3_image"
                     android:src="@drawable/running_parts_l3"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -3057,7 +3057,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_12_4"
+                    android:id="@+id/row_12_4_image"
                     android:src="@drawable/running_parts_l3"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -3092,7 +3092,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_12_5"
+                    android:id="@+id/row_12_5_image"
                     android:src="@drawable/running_parts_rest"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -3127,7 +3127,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_12_6"
+                    android:id="@+id/row_12_6_image"
                     android:src="@drawable/running_parts_rest"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"
@@ -3162,7 +3162,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView_12_7"
+                    android:id="@+id/row_12_7_image"
                     android:src="@drawable/running_parts_l4"
                     android:paddingLeft="25dp"
                     android:paddingTop="15dp"

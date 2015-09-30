@@ -32,9 +32,7 @@ public class WorkoutMenu extends ActionBarActivity {
     final int INTERMEDIATE = 1;
     final int COMPETITIVE = 2;
     final int ADVANCED = 3;
-    final int ELITE = 4;
-    final int SET = 5;
-
+    final int SET = 4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -51,13 +49,12 @@ public class WorkoutMenu extends ActionBarActivity {
         checkBoxArray = new CheckBox[84];
         getCheckBoxStates();
 
-        difficulty = new boolean[6];
+        difficulty = new boolean[5];
         for (int i = 0; i < difficulty.length - 1; i++) {
             difficulty[i] = false;
         }
 
         difficulty[SET] = load("difficulty " + SET);
-
 
         configureSettingsButton();
 
@@ -72,101 +69,7 @@ public class WorkoutMenu extends ActionBarActivity {
         }
 
         // Initialize click listeners for workout buttons
-        configureButton_1_1();
-        configureButton_1_2();
-        configureButton_1_3();
-        configureButton_1_4();
-        configureButton_1_5();
-        configureButton_1_6();
-        configureButton_1_7();
-
-        configureButton_2_1();
-        configureButton_2_2();
-        configureButton_2_3();
-        configureButton_2_4();
-        configureButton_2_5();
-        configureButton_2_6();
-        configureButton_2_7();
-
-        configureButton_3_1();
-        configureButton_3_2();
-        configureButton_3_3();
-        configureButton_3_4();
-        configureButton_3_5();
-        configureButton_3_6();
-        configureButton_3_7();
-
-        configureButton_4_1();
-        configureButton_4_2();
-        configureButton_4_3();
-        configureButton_4_4();
-        configureButton_4_5();
-        configureButton_4_6();
-        configureButton_4_7();
-
-        configureButton_5_1();
-        configureButton_5_2();
-        configureButton_5_3();
-        configureButton_5_4();
-        configureButton_5_5();
-        configureButton_5_6();
-        configureButton_5_7();
-
-        configureButton_6_1();
-        configureButton_6_2();
-        configureButton_6_3();
-        configureButton_6_4();
-        configureButton_6_5();
-        configureButton_6_6();
-        configureButton_6_7();
-
-        configureButton_7_1();
-        configureButton_7_2();
-        configureButton_7_3();
-        configureButton_7_4();
-        configureButton_7_5();
-        configureButton_7_6();
-        configureButton_7_7();
-
-        configureButton_8_1();
-        configureButton_8_2();
-        configureButton_8_3();
-        configureButton_8_4();
-        configureButton_8_5();
-        configureButton_8_6();
-        configureButton_8_7();
-
-        configureButton_9_1();
-        configureButton_9_2();
-        configureButton_9_3();
-        configureButton_9_4();
-        configureButton_9_5();
-        configureButton_9_6();
-        configureButton_9_7();
-
-        configureButton_10_1();
-        configureButton_10_2();
-        configureButton_10_3();
-        configureButton_10_4();
-        configureButton_10_5();
-        configureButton_10_6();
-        configureButton_10_7();
-
-        configureButton_11_1();
-        configureButton_11_2();
-        configureButton_11_3();
-        configureButton_11_4();
-        configureButton_11_5();
-        configureButton_11_6();
-        configureButton_11_7();
-
-        configureButton_12_1();
-        configureButton_12_2();
-        configureButton_12_3();
-        configureButton_12_4();
-        configureButton_12_5();
-        configureButton_12_6();
-        configureButton_12_7();
+        configureWorkoutButtons();
     }
 
     @Override
@@ -373,6 +276,7 @@ public class WorkoutMenu extends ActionBarActivity {
                         }
                         difficulty[BEGINNER] = true;
                         difficulty[SET] = true;
+                        configureWorkoutButtons();
                     }
                 });
 
@@ -387,6 +291,7 @@ public class WorkoutMenu extends ActionBarActivity {
                         }
                         difficulty[INTERMEDIATE] = true;
                         difficulty[SET] = true;
+                        configureWorkoutButtons();
                     }
                 });
 
@@ -401,6 +306,7 @@ public class WorkoutMenu extends ActionBarActivity {
                         }
                         difficulty[COMPETITIVE] = true;
                         difficulty[SET] = true;
+                        configureWorkoutButtons();
                     }
                 });
 
@@ -415,20 +321,7 @@ public class WorkoutMenu extends ActionBarActivity {
                         }
                         difficulty[ADVANCED] = true;
                         difficulty[SET] = true;
-                    }
-                });
-
-                LinearLayout eRow = (LinearLayout) popupView.findViewById(R.id.elite_row);
-                eRow.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        RadioButton button = (RadioButton) popupView.findViewById(R.id.elite_button);
-                        button.setChecked(true);
-                        for (int i = 0; i < difficulty.length; i++) {
-                            difficulty[i] = false;
-                        }
-                        difficulty[ELITE] = true;
-                        difficulty[SET] = true;
+                        configureWorkoutButtons();
                     }
                 });
 
@@ -444,11 +337,123 @@ public class WorkoutMenu extends ActionBarActivity {
         });
     }
 
+    public void configureWorkoutButtons() {
+        configureButton_1_1();
+        configureButton_1_2();
+        configureButton_1_3();
+        configureButton_1_4();
+        configureButton_1_5();
+        configureButton_1_6();
+        configureButton_1_7();
+
+        configureButton_2_1();
+        configureButton_2_2();
+        configureButton_2_3();
+        configureButton_2_4();
+        configureButton_2_5();
+        configureButton_2_6();
+        configureButton_2_7();
+
+        configureButton_3_1();
+        configureButton_3_2();
+        configureButton_3_3();
+        configureButton_3_4();
+        configureButton_3_5();
+        configureButton_3_6();
+        configureButton_3_7();
+
+        configureButton_4_1();
+        configureButton_4_2();
+        configureButton_4_3();
+        configureButton_4_4();
+        configureButton_4_5();
+        configureButton_4_6();
+        configureButton_4_7();
+
+        configureButton_5_1();
+        configureButton_5_2();
+        configureButton_5_3();
+        configureButton_5_4();
+        configureButton_5_5();
+        configureButton_5_6();
+        configureButton_5_7();
+
+        configureButton_6_1();
+        configureButton_6_2();
+        configureButton_6_3();
+        configureButton_6_4();
+        configureButton_6_5();
+        configureButton_6_6();
+        configureButton_6_7();
+
+        configureButton_7_1();
+        configureButton_7_2();
+        configureButton_7_3();
+        configureButton_7_4();
+        configureButton_7_5();
+        configureButton_7_6();
+        configureButton_7_7();
+
+        configureButton_8_1();
+        configureButton_8_2();
+        configureButton_8_3();
+        configureButton_8_4();
+        configureButton_8_5();
+        configureButton_8_6();
+        configureButton_8_7();
+
+        configureButton_9_1();
+        configureButton_9_2();
+        configureButton_9_3();
+        configureButton_9_4();
+        configureButton_9_5();
+        configureButton_9_6();
+        configureButton_9_7();
+
+        configureButton_10_1();
+        configureButton_10_2();
+        configureButton_10_3();
+        configureButton_10_4();
+        configureButton_10_5();
+        configureButton_10_6();
+        configureButton_10_7();
+
+        configureButton_11_1();
+        configureButton_11_2();
+        configureButton_11_3();
+        configureButton_11_4();
+        configureButton_11_5();
+        configureButton_11_6();
+        configureButton_11_7();
+
+        configureButton_12_1();
+        configureButton_12_2();
+        configureButton_12_3();
+        configureButton_12_4();
+        configureButton_12_5();
+        configureButton_12_6();
+        configureButton_12_7();
+    }
+
     /**
      * Configures the click listener for workout button one
      */
     private void configureButton_1_1() {
         layout[0][0] = (LinearLayout) findViewById(R.id.row_1_1);
+
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_1_1_image);
+
+        layout[0][0].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l1);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        }
 
         layout[0][0].setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -460,8 +465,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[0][0].setBackgroundColor(Color.WHITE);
-//                        startActivity(new Intent(getApplicationContext(), Week_1_Day_1.class));
-                        startActivity(new Intent(getApplicationContext(), Workout_1_1.class));
+                        
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_1_1.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_1_1.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_1_1.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_1_1.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -480,6 +494,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_1_2() {
         layout[0][1] = (LinearLayout) findViewById(R.id.row_1_2);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_1_2_image);
+
+        layout[0][1].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l1);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        }
+
         layout[0][1].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -490,6 +518,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[0][1].setBackgroundColor(Color.WHITE);
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_1_2.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_1_2.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_1_2.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_1_2.class));
+                        }
+                        
                         startActivity(new Intent(getApplicationContext(), Workout_1_2.class));
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
@@ -509,6 +548,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_1_3() {
         layout[0][2] = (LinearLayout) findViewById(R.id.row_1_3);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_1_3_image);
+
+        layout[0][2].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l1);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        }
+
         layout[0][2].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -519,7 +572,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[0][2].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_1_3.class));
+                        
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_1_3.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_1_3.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_1_3.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_1_3.class));
+                        }
+
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -538,6 +601,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_1_4() {
         layout[0][3] = (LinearLayout) findViewById(R.id.row_1_4);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_1_4_image);
+
+        layout[0][3].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l1);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        }
+
         layout[0][3].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -547,7 +624,17 @@ public class WorkoutMenu extends ActionBarActivity {
                         break;
                     case MotionEvent.ACTION_UP:
                         layout[0][3].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_1_4.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_1_4.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_1_4.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_1_4.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_1_4.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -566,6 +653,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_1_5() {
         layout[0][4] = (LinearLayout) findViewById(R.id.row_1_5);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_1_5_image);
+
+        layout[0][4].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l1);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        }
+
         layout[0][4].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -576,7 +677,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[0][4].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_1_5.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_1_5.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_1_5.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_1_5.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_1_5.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -595,6 +706,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_1_6() {
         layout[0][5] = (LinearLayout) findViewById(R.id.row_1_6);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_1_6_image);
+
+        layout[0][5].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l1);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[0][5].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -605,7 +730,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[0][5].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_1_6.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_1_6.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_1_6.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -624,6 +759,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_1_7() {
         layout[0][6] = (LinearLayout) findViewById(R.id.row_1_7);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_1_7_image);
+
+        layout[0][6].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l1);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        }
+
         layout[0][6].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -634,7 +783,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[0][6].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_1_7.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_1_7.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_1_7.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_1_7.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_1_7.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -653,6 +812,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_2_1() {
         layout[1][0] = (LinearLayout) findViewById(R.id.row_2_1);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_2_1_image);
+
+        layout[1][0].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[1][0].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -663,7 +836,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[1][0].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -682,6 +865,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_2_2() {
         layout[1][1] = (LinearLayout) findViewById(R.id.row_2_2);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_2_2_image);
+
+        layout[1][1].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l1);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        }
+
         layout[1][1].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -692,7 +889,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[1][1].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_2_2.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_2_2.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_2_2.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_2_2.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_2_2.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -711,6 +918,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_2_3() {
         layout[1][2] = (LinearLayout) findViewById(R.id.row_2_3);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_2_3_image);
+
+        layout[1][2].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l1);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        }
+
         layout[1][2].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -721,7 +942,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[1][2].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_2_3.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_2_3.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_2_3.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_2_3.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_2_3.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -740,6 +971,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_2_4() {
         layout[1][3] = (LinearLayout) findViewById(R.id.row_2_4);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_2_4_image);
+
+        layout[1][3].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l2);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        }
+
         layout[1][3].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -750,7 +995,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[1][3].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_2_4.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_2_4.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_2_4.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_2_4.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_2_4.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -769,6 +1024,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_2_5() {
         layout[1][4] = (LinearLayout) findViewById(R.id.row_2_5);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_2_5_image);
+
+        layout[1][4].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l2);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        }
+
         layout[1][4].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -779,7 +1048,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[1][4].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_2_5.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_2_5.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_2_5.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_2_5.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_2_5.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -798,6 +1077,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_2_6() {
         layout[1][5] = (LinearLayout) findViewById(R.id.row_2_6);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_2_6_image);
+
+        layout[1][5].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l2);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l2);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[1][5].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -808,7 +1101,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[1][5].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_2_6.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_2_6.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_2_6.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -827,6 +1130,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_2_7() {
         layout[1][6] = (LinearLayout) findViewById(R.id.row_2_7);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_2_7_image);
+
+        layout[1][6].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l1);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        }
+
         layout[1][6].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -837,7 +1154,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[1][6].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_2_7.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_2_7.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_2_7.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_2_7.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_2_7.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -856,6 +1183,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_3_1() {
         layout[2][0] = (LinearLayout) findViewById(R.id.row_3_1);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_3_1_image);
+
+        layout[2][0].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l2);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[2][0].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -866,7 +1207,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[2][0].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_3_1.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -885,6 +1236,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_3_2() {
         layout[2][1] = (LinearLayout) findViewById(R.id.row_3_2);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_3_2_image);
+
+        layout[2][1].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l2);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        }
+
         layout[2][1].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -895,7 +1260,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[2][1].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_3_2.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_3_2.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_3_2.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_3_2.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_3_2.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -914,6 +1289,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_3_3() {
         layout[2][2] = (LinearLayout) findViewById(R.id.row_3_3);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_3_3_image);
+
+        layout[2][2].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l1);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        }
+
         layout[2][2].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -924,7 +1313,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[2][2].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_3_3.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_3_3.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_3_3.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_3_3.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_3_3.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -943,6 +1342,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_3_4() {
         layout[2][3] = (LinearLayout) findViewById(R.id.row_3_4);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_3_4_image);
+
+        layout[2][3].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l2);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l2);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        }
+
         layout[2][3].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -953,7 +1366,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[2][3].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_3_4.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_3_4.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_3_4.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_3_4.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_3_4.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -972,6 +1395,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_3_5() {
         layout[2][4] = (LinearLayout) findViewById(R.id.row_3_5);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_3_5_image);
+
+        layout[2][4].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        }
+
         layout[2][4].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -982,7 +1419,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[2][4].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_3_5.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_3_5.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_3_5.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_3_5.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_3_5.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1001,6 +1448,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_3_6() {
         layout[2][5] = (LinearLayout) findViewById(R.id.row_3_6);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_3_6_image);
+
+        layout[2][5].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[2][5].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1011,7 +1472,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[2][5].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_3_6.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1030,6 +1501,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_3_7() {
         layout[2][6] = (LinearLayout) findViewById(R.id.row_3_7);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_3_7_image);
+
+        layout[2][6].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l2);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        }
+
         layout[2][6].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1040,7 +1525,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[2][6].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_3_7.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_3_7.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_3_7.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_3_7.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_3_7.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1059,6 +1554,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_4_1() {
         layout[3][0] = (LinearLayout) findViewById(R.id.row_4_1);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_4_1_image);
+
+        layout[3][0].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[3][0].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1069,7 +1578,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[3][0].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1088,6 +1607,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_4_2() {
         layout[3][1] = (LinearLayout) findViewById(R.id.row_4_2);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_4_2_image);
+
+        layout[3][1].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        }
+
         layout[3][1].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1098,7 +1631,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[3][1].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_4_2.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_4_2.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_4_2.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_4_2.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_4_2.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1117,6 +1660,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_4_3() {
         layout[3][2] = (LinearLayout) findViewById(R.id.row_4_3);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_4_3_image);
+
+        layout[3][2].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        }
+
         layout[3][2].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1127,7 +1684,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[3][2].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_4_3.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_4_3.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_4_3.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_4_3.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_4_3.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1146,6 +1713,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_4_4() {
         layout[3][3] = (LinearLayout) findViewById(R.id.row_4_4);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_4_4_image);
+
+        layout[3][3].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l1);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        }
+
         layout[3][3].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1156,7 +1737,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[3][3].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_4_4.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_4_4.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_4_4.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_4_4.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1175,6 +1766,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_4_5() {
         layout[3][4] = (LinearLayout) findViewById(R.id.row_4_5);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_4_5_image);
+
+        layout[3][4].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        }
+
         layout[3][4].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1185,7 +1790,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[3][4].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_4_5.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_4_5.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_4_5.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_4_5.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_4_5.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1204,6 +1819,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_4_6() {
         layout[3][5] = (LinearLayout) findViewById(R.id.row_4_6);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_4_6_image);
+
+        layout[3][5].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[3][5].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1214,7 +1843,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[3][5].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_4_6.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1233,6 +1872,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_4_7() {
         layout[3][6] = (LinearLayout) findViewById(R.id.row_4_7);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_4_7_image);
+
+        layout[3][6].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        }
+
         layout[3][6].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1243,7 +1896,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[3][6].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_4_7.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_4_7.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_4_7.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_4_7.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_4_7.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1262,6 +1925,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_5_1() {
         layout[4][0] = (LinearLayout) findViewById(R.id.row_5_1);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_5_1_image);
+
+        layout[4][0].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[4][0].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1272,7 +1949,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[4][0].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1291,6 +1978,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_5_2() {
         layout[4][1] = (LinearLayout) findViewById(R.id.row_5_2);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_5_2_image);
+
+        layout[4][1].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        }
+
         layout[4][1].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1301,7 +2002,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[4][1].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_5_2.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_5_2.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_5_2.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_5_2.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_5_2.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1320,6 +2031,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_5_3() {
         layout[4][2] = (LinearLayout) findViewById(R.id.row_5_3);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_5_3_image);
+
+        layout[4][2].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        }
+
         layout[4][2].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1330,7 +2055,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[4][2].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_5_3.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_5_3.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_5_3.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1349,6 +2084,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_5_4() {
         layout[4][3] = (LinearLayout) findViewById(R.id.row_5_4);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_5_4_image);
+
+        layout[4][3].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l1);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        }
+
         layout[4][3].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1359,7 +2108,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[4][3].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_5_4.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_5_4.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_5_4.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_5_4.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_5_4.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1378,6 +2137,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_5_5() {
         layout[4][4] = (LinearLayout) findViewById(R.id.row_5_5);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_5_5_image);
+
+        layout[4][4].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        }
+
         layout[4][4].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1388,7 +2161,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[4][4].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_5_5.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_5_5.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_5_5.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_5_5.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_5_5.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1407,6 +2190,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_5_6() {
         layout[4][5] = (LinearLayout) findViewById(R.id.row_5_6);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_5_6_image);
+
+        layout[4][5].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[4][5].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1417,7 +2214,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[4][5].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1436,6 +2243,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_5_7() {
         layout[4][6] = (LinearLayout) findViewById(R.id.row_5_7);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_5_7_image);
+
+        layout[4][6].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        }
+
         layout[4][6].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1446,7 +2267,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[4][6].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_5_7.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_5_7.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_5_7.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_5_7.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_5_7.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1465,6 +2296,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_6_1() {
         layout[5][0] = (LinearLayout) findViewById(R.id.row_6_1);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_6_1_image);
+
+        layout[5][0].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[5][0].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1475,7 +2320,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[5][0].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1494,6 +2349,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_6_2() {
         layout[5][1] = (LinearLayout) findViewById(R.id.row_6_2);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_6_2_image);
+
+        layout[5][1].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l2);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l2);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        }
+
         layout[5][1].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1504,7 +2373,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[5][1].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_6_2.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_6_2.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_6_2.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_6_2.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_6_2.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1523,6 +2402,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_6_3() {
         layout[5][2] = (LinearLayout) findViewById(R.id.row_6_3);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_6_3_image);
+
+        layout[5][2].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l1);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        }
+
         layout[5][2].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1533,7 +2426,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[5][2].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_6_3.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_6_3.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_6_3.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_6_3.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_6_3.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1552,6 +2455,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_6_4() {
         layout[5][3] = (LinearLayout) findViewById(R.id.row_6_4);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_6_4_image);
+
+        layout[5][3].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        }
+
         layout[5][3].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1562,7 +2479,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[5][3].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_6_4.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_6_4.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_6_4.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_6_4.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_6_4.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1581,6 +2508,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_6_5() {
         layout[5][4] = (LinearLayout) findViewById(R.id.row_6_5);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_6_5_image);
+
+        layout[5][4].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        }
+
         layout[5][4].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1591,7 +2532,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[5][4].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_6_5.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_6_5.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_6_5.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_6_5.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1610,6 +2561,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_6_6() {
         layout[5][5] = (LinearLayout) findViewById(R.id.row_6_6);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_6_6_image);
+
+        layout[5][5].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[5][5].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1620,7 +2585,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[5][5].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_6_6.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1639,6 +2614,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_6_7() {
         layout[5][6] = (LinearLayout) findViewById(R.id.row_6_7);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_6_7_image);
+
+        layout[5][6].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        }
+
         layout[5][6].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1649,7 +2638,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[5][6].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_6_7.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_6_7.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_6_7.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_6_7.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_6_7.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1668,6 +2667,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_7_1() {
         layout[6][0] = (LinearLayout) findViewById(R.id.row_7_1);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_7_1_image);
+
+        layout[6][0].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[6][0].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1678,7 +2691,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[6][0].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1697,6 +2720,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_7_2() {
         layout[6][1] = (LinearLayout) findViewById(R.id.row_7_2);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_7_2_image);
+
+        layout[6][1].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        }
+
         layout[6][1].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1707,7 +2744,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[6][1].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_7_2.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_7_2.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_7_2.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1726,6 +2773,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_7_3() {
         layout[6][2] = (LinearLayout) findViewById(R.id.row_7_3);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_7_3_image);
+
+        layout[6][2].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        }
+
         layout[6][2].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1736,7 +2797,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[6][2].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_7_3.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_7_3.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_7_3.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_7_3.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_7_3.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1755,6 +2826,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_7_4() {
         layout[6][3] = (LinearLayout) findViewById(R.id.row_7_4);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_7_4_image);
+
+        layout[6][3].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[6][3].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1765,7 +2850,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[6][3].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_7_4.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1784,6 +2879,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_7_5() {
         layout[6][4] = (LinearLayout) findViewById(R.id.row_7_5);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_7_5_image);
+
+        layout[6][4].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        }
+
         layout[6][4].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1794,7 +2903,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[6][4].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_7_5.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_7_5.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_7_5.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_7_5.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_7_5.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1813,6 +2932,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_7_6() {
         layout[6][5] = (LinearLayout) findViewById(R.id.row_7_6);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_7_6_image);
+
+        layout[6][5].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[6][5].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1823,7 +2956,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[6][5].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1842,6 +2985,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_7_7() {
         layout[6][6] = (LinearLayout) findViewById(R.id.row_7_7);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_7_7_image);
+
+        layout[6][6].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        }
+
         layout[6][6].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1852,7 +3009,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[6][6].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_7_7.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_7_7.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_7_7.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_7_7.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_7_7.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1871,6 +3038,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_8_1() {
         layout[7][0] = (LinearLayout) findViewById(R.id.row_8_1);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_8_1_image);
+
+        layout[7][0].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[7][0].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1881,7 +3062,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[7][0].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1900,6 +3091,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_8_2() {
         layout[7][1] = (LinearLayout) findViewById(R.id.row_8_2);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_8_2_image);
+
+        layout[7][1].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        }
+
         layout[7][1].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1910,7 +3115,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[7][1].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_8_2.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_8_2.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_8_2.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_8_2.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_8_2.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1929,6 +3144,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_8_3() {
         layout[7][2] = (LinearLayout) findViewById(R.id.row_8_3);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_8_3_image);
+
+        layout[7][2].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        }
+
         layout[7][2].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1939,7 +3168,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[7][2].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_8_3.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_8_3.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_8_3.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_8_3.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1958,6 +3197,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_8_4() {
         layout[7][3] = (LinearLayout) findViewById(R.id.row_8_4);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_8_4_image);
+
+        layout[7][3].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        }
+
         layout[7][3].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1968,7 +3221,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[7][3].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_8_4.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_8_4.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_8_4.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -1987,6 +3250,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_8_5() {
         layout[7][4] = (LinearLayout) findViewById(R.id.row_8_5);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_8_5_image);
+
+        layout[7][4].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[7][4].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1997,7 +3274,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[7][4].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_8_5.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_8_5.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_8_5.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_8_5.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -2016,6 +3303,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_8_6() {
         layout[7][5] = (LinearLayout) findViewById(R.id.row_8_6);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_8_6_image);
+
+        layout[7][5].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[7][5].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -2026,7 +3327,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[7][5].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -2045,6 +3356,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_8_7() {
         layout[7][6] = (LinearLayout) findViewById(R.id.row_8_7);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_8_7_image);
+
+        layout[7][6].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        }
+
         layout[7][6].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -2055,7 +3380,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[7][6].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_8_7.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_8_7.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_8_7.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_8_7.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_8_7.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -2074,6 +3409,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_9_1() {
         layout[8][0] = (LinearLayout) findViewById(R.id.row_9_1);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_9_1_image);
+
+        layout[8][0].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[8][0].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -2084,7 +3433,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[8][0].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -2103,6 +3462,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_9_2() {
         layout[8][1] = (LinearLayout) findViewById(R.id.row_9_2);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_9_2_image);
+
+        layout[8][1].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        }
+
         layout[8][1].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -2113,7 +3486,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[8][1].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_9_2.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_9_2.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_9_2.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_9_2.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_9_2.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -2132,6 +3515,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_9_3() {
         layout[8][2] = (LinearLayout) findViewById(R.id.row_9_3);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_9_3_image);
+
+        layout[8][2].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[8][2].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -2142,7 +3539,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[8][2].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_9_3.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_9_3.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -2161,6 +3568,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_9_4() {
         layout[8][3] = (LinearLayout) findViewById(R.id.row_9_4);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_9_4_image);
+
+        layout[8][3].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        }
+
         layout[8][3].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -2171,7 +3592,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[8][3].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_9_4.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_9_4.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_9_4.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_9_4.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_9_4.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -2190,6 +3621,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_9_5() {
         layout[8][4] = (LinearLayout) findViewById(R.id.row_9_5);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_9_5_image);
+
+        layout[8][4].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        }
+
         layout[8][4].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -2200,7 +3645,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[8][4].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_9_5.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_9_5.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_9_5.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_9_5.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -2219,6 +3674,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_9_6() {
         layout[8][5] = (LinearLayout) findViewById(R.id.row_9_6);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_9_6_image);
+
+        layout[8][5].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[8][5].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -2229,7 +3698,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[8][5].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -2248,6 +3727,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_9_7() {
         layout[8][6] = (LinearLayout) findViewById(R.id.row_9_7);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_9_7_image);
+
+        layout[8][6].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        }
+
         layout[8][6].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -2258,7 +3751,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[8][6].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_9_7.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_9_7.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_9_7.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_9_7.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_9_7.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -2277,6 +3780,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_10_1() {
         layout[9][0] = (LinearLayout) findViewById(R.id.row_10_1);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_10_1_image);
+
+        layout[9][0].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[9][0].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -2287,7 +3804,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[9][0].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -2306,6 +3833,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_10_2() {
         layout[9][1] = (LinearLayout) findViewById(R.id.row_10_2);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_10_2_image);
+
+        layout[9][1].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        }
+
         layout[9][1].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -2316,7 +3857,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[9][1].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_10_2.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_10_2.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_10_2.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_10_2.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -2335,6 +3886,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_10_3() {
         layout[9][2] = (LinearLayout) findViewById(R.id.row_10_3);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_10_3_image);
+
+        layout[9][2].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        }
+
         layout[9][2].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -2345,7 +3910,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[9][2].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_10_3.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_10_3.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_10_3.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_10_3.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), Adv_10_3.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -2364,6 +3939,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_10_4() {
         layout[9][3] = (LinearLayout) findViewById(R.id.row_10_4);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_10_4_image);
+
+        layout[9][3].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[9][3].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -2374,7 +3963,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[9][3].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), Com_10_4.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -2393,6 +3992,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_10_5() {
         layout[9][4] = (LinearLayout) findViewById(R.id.row_10_5);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_10_5_image);
+
+        layout[9][4].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[9][4].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -2403,7 +4016,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[9][4].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_10_5.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_10_5.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_10_5.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -2422,6 +4045,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_10_6() {
         layout[9][5] = (LinearLayout) findViewById(R.id.row_10_6);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_10_6_image);
+
+        layout[9][5].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[9][5].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -2432,7 +4069,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[9][5].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -2451,6 +4098,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_10_7() {
         layout[9][6] = (LinearLayout) findViewById(R.id.row_10_7);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_10_7_image);
+
+        layout[9][6].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        }
+
         layout[9][6].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -2461,7 +4122,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[9][6].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_10_7.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_10_7.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_10_7.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RaceDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RaceDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -2480,6 +4151,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_11_1() {
         layout[10][0] = (LinearLayout) findViewById(R.id.row_11_1);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_11_1_image);
+
+        layout[10][0].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[10][0].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -2490,7 +4175,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[10][0].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -2509,6 +4204,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_11_2() {
         layout[10][1] = (LinearLayout) findViewById(R.id.row_11_2);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_11_2_image);
+
+        layout[10][1].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[10][1].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -2519,7 +4228,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[10][1].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_11_2.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -2538,6 +4257,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_11_3() {
         layout[10][2] = (LinearLayout) findViewById(R.id.row_11_3);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_11_3_image);
+
+        layout[10][2].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[10][2].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -2548,7 +4281,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[10][2].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_11_3.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_11_3.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -2567,6 +4310,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_11_4() {
         layout[10][3] = (LinearLayout) findViewById(R.id.row_11_4);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_11_4_image);
+
+        layout[10][3].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[10][3].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -2577,7 +4334,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[10][3].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_11_4.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -2596,6 +4363,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_11_5() {
         layout[10][4] = (LinearLayout) findViewById(R.id.row_11_5);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_11_5_image);
+
+        layout[10][4].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[10][4].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -2606,7 +4387,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[10][4].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_11_5.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_11_5.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_11_5.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -2625,6 +4416,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_11_6() {
         layout[10][5] = (LinearLayout) findViewById(R.id.row_11_6);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_11_6_image);
+
+        layout[10][5].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[10][5].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -2635,7 +4440,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[10][5].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -2654,6 +4469,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_11_7() {
         layout[10][6] = (LinearLayout) findViewById(R.id.row_11_7);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_11_7_image);
+
+        layout[10][6].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[10][6].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -2664,7 +4493,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[10][6].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_11_7.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_11_7.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_11_7.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -2683,6 +4522,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_12_1() {
         layout[11][0] = (LinearLayout) findViewById(R.id.row_12_1);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_12_1_image);
+
+        layout[11][0].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[11][0].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -2693,7 +4546,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[11][0].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -2712,6 +4575,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_12_2() {
         layout[11][1] = (LinearLayout) findViewById(R.id.row_12_2);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_12_2_image);
+
+        layout[11][1].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[11][1].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -2722,7 +4599,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[11][1].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_12_2.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -2741,6 +4628,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_12_3() {
         layout[11][2] = (LinearLayout) findViewById(R.id.row_12_3);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_12_3_image);
+
+        layout[11][2].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[11][2].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -2751,7 +4652,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[11][2].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_12_3.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_12_3.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_12_3.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -2770,6 +4681,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_12_4() {
         layout[11][3] = (LinearLayout) findViewById(R.id.row_12_4);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_12_4_image);
+
+        layout[11][3].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l3);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[11][3].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -2780,7 +4705,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[11][3].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), Workout_12_4.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), Beg_12_4.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), Workout_12_4.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -2799,6 +4734,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_12_5() {
         layout[11][4] = (LinearLayout) findViewById(R.id.row_12_5);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_12_5_image);
+
+        layout[11][4].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[11][4].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -2809,7 +4758,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[11][4].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -2828,6 +4787,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_12_6() {
         layout[11][5] = (LinearLayout) findViewById(R.id.row_12_6);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_12_6_image);
+
+        layout[11][5].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[11][5].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -2838,7 +4811,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[11][5].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
@@ -2857,6 +4840,20 @@ public class WorkoutMenu extends ActionBarActivity {
     private void configureButton_12_7() {
         layout[11][6] = (LinearLayout) findViewById(R.id.row_12_7);
 
+        ImageView difficulty_image = (ImageView) findViewById(R.id.row_12_7_image);
+
+        layout[11][6].requestFocus();
+
+        if (difficulty[BEGINNER]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[INTERMEDIATE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_l4);
+        } else if (difficulty[COMPETITIVE]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        } else if (difficulty[ADVANCED]) {
+            difficulty_image.setImageResource(R.drawable.running_parts_rest);
+        }
+
         layout[11][6].setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -2867,7 +4864,17 @@ public class WorkoutMenu extends ActionBarActivity {
 
                     case MotionEvent.ACTION_UP:
                         layout[11][6].setBackgroundColor(Color.WHITE);
-                        startActivity(new Intent(getApplicationContext(), RaceDayActivity.class));
+
+                        if (difficulty[BEGINNER]) {
+                            startActivity(new Intent(getApplicationContext(), RaceDayActivity.class));
+                        } else if (difficulty[INTERMEDIATE]) {
+                            startActivity(new Intent(getApplicationContext(), RaceDayActivity.class));
+                        } else if (difficulty[COMPETITIVE]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        } else if (difficulty[ADVANCED]) {
+                            startActivity(new Intent(getApplicationContext(), RestDayActivity.class));
+                        }
+                        
                         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
                         break;
 
